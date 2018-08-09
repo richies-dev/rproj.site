@@ -1,0 +1,155 @@
+doctype html
+html
+
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+    link(rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css")
+    link(rel="stylesheet" href="/style")
+
+  body
+
+    section#redesign_info(style='z-index:1000;position:fixed;top:0px;right:0px;left:0px;bottom:0px;width:100%;background:rgba(255, 255, 255, 0.95);')
+      div(style='width:90%;max-width:960px;margin:20vh auto;padding:0px;font-size:18px;position:  relative;')
+        h1(style='font-size: 32px;display:inline;line-height:1;') Under Construction
+        i.fas.fa-times(style='right:0;display:inline;float:right;cursor:pointer;color:#ff5858;line-height:1.5;font-size:24px;', onclick="document.getElementById('redesign_info').style.display='none';")
+        hr(style='float:none;clear:both;display:block;margin:0;border:none;padding-bottom:32px;')
+        p(style='padding-bottom: 32px;line-height:1.6;font-size:20px;')
+          | Hi,
+          br
+          | Currently my website is being re-designed. What you see now is still a work in progress.
+        p(style='font-size:16px;')
+          | -Richie (richie@devrichie.com)
+          | 7/30/2018
+
+    //Animated gradient
+    section.animated_background.animated_background-top
+      div.animated_background_inner.animated_background_inner-rotated
+        img(src="http://172.30.1.5/bg")
+
+    //For all of the main content
+    section.main
+
+      //The highest point of the page which content can be rendered on - used for the navbar
+      section.top
+        nav
+          header
+            h1.name Richie Sikra
+            ul.navbar  
+              each item in options.navbar
+                li.navbar_item 
+                  a(href=item.url) #{item.title}
+
+      //Quick summary
+      section.top_content
+        header.top_content_header.top_content_header-main Hi, I'm Richie
+        header.top_content_header.top_content_header-sub 3D Programmer, Web & Game Developer
+        //jump to projects
+        a.top_content_button(href="#button") View my work
+        
+      //The main content of the site
+      section.content
+      
+        //Skills/About
+        section.skill_container
+          div.skill_container_item.skill_container_item-1-2
+            header
+              h2 About Me
+            p 
+              ='In 2015 I released my first game Aeroflight, a year later I spent three months creating Stardive and at the end of that year I created a game in C++ within the course of a month.'
+              br
+              ='Currently I\'m exploring new frontend technologies and writing performance updates for '
+              a(href='drumchannel.com') DrumChannel.com
+              
+          div.skill_container_item.skill_container_item-1-2
+            header
+              h2 Skills
+            p 
+              ='C++, OpenGL, Assimp'
+              br 
+              ='C#, Unity3D'
+              br 
+              ='PHP, Javascript, HTML, CSS'
+              br 
+              ='NodeJS, AngularJS'
+              br 
+              ='Wordpress, WooCommerce, Sensei'
+            
+        //My projects
+        section.projects
+          
+          //A title
+          header.projects_header
+            h2 Projects
+          
+          //A single project
+          article.project
+          
+            aside.project_left
+              h3.project_left_title StarDive
+              p.project_left_description 
+                ='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra porta iaculis. Aliquam erat volutpat. Quisque quis magna eu ex dictum placerat nec ac sem. Nulla et eros ut eros lobortis ultricies.'
+              section.project_left_tools_used
+                h3 Tools Used
+                p Unity 3D, Javascript, C++
+                
+            section.project_right
+              video.project_right_video(id='portfolio-item-video-player')
+                source(src='https://devrichie.com/Images/StarDiveWebBanner.mp4')
+                
+              div.button_container.button_container-center
+                a.button_container_button.button_container_button-view
+                  span View Project
+                a.button_container_button.button_container_button-watch
+                  span Watch Video
+                  i.play_icon
+                  
+          //A single small project
+          article.project.project-small
+          
+            img.project_left_image
+              
+            section.project_right
+              h4.project_right_title Title
+              p.project_right_description
+                ='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra porta iaculis. Aliquam erat volutpat. Quisque quis magna eu ex dictum placerat nec ac sem. Nulla et eros ut eros lobortis ultricies.'
+          
+          //When clicked the load more button should load more projects below
+          a.projects_load_more_button(href='#')
+            ='Load more projects'
+            
+    section.animated_background.animated_background-relative.animated_background-bottom
+      section.animated_background_inner.animated_background_inner-rotated
+
+        //The contact form should send an email to me and prompt a captcha
+        article.contact_form
+
+          header.contact_form_header
+            h2 Contact Me
+          form(action='#')
+            label.contact_form_label Name
+            input.contact_form_input.contact_form_input-field(placeholder='Your name' type='text' autocomplete='name')
+
+            label.contact_form_label Email Address
+            input.contact_form_input.contact_form_input-field(placeholder='Your email' type='email' autocomplete='email')
+
+            label.contact_form_label Message
+            textarea.contact_form_input.contact_form_input-textarea(placeholder='How can I help you?')
+
+            input.contact_form_input.contact_form_input-submit(value='Send message' type='submit')
+
+        //The footer of the website
+        section.footer
+          section.footer_inner
+            //social media icons
+            div.icons.icons-center
+              a.icons_icon
+                img.icons_icon_image
+              a.icons_icon
+                img.icons_icon_image
+
+            //copyright
+            article.copyright
+              p.copyright_text Copyright � 2018 Richie Sikra. All Rights Reserved.

@@ -1,0 +1,12 @@
+{
+  "navbar":[
+    {
+      "title":"Projects",
+      "url": "/"
+    },
+    {
+      "title":"Tools",
+      "url": "/tools"
+    }
+  ]
+}
