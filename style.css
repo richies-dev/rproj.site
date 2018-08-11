@@ -38,7 +38,7 @@ body {
   display: block;
 }
 
-.animated_background .animated_background_inner img {
+.animated_background .animated_background_inner .animated_background_inner_img {
   position: absolute;
   min-width: 1080px;
   width: 100%;
@@ -229,22 +229,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  min-width: 55.7407407407vh;
   top: 0;
   right: 0;
   bottom: 0;
+  width:45%;
 }
 .projects .project_right_video {
   margin: 0% 0;
   overflow: hidden;
   position: relative;
-  max-height: 65.25vh;
-  max-width: 100%;
 }
 @media all and (max-width: 960px) {
+  .projects .project_right {
+    width:100%;
+  }
   .projects .project_right_video {
-    width: 100%;
-    max-height: auto;
   }
 }
 .projects .project_right .button_container {
@@ -255,27 +254,35 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 0;
+  margin-top: auto;
 }
 .projects .project_right .button_container-center {
   text-align: center;
 }
 .projects .project_right .button_container_button {
-  padding: 1.3888888889vh 3.4259259259vh;
-  margin: 1.3888888889vh;
+  width:46%;
+  margin: 2% 2%;
+  padding:2%;
   font-size: 1.2962962963vh;
   display: inline-block;
   background: white;
 }
 .projects .project-small {
   min-height: 0;
-  padding: 3.1481481481vh;
 }
+
+.projects .project-small .project_right {
+  padding: 3.4259259259vh;
+}
+
 .projects .project-small .project_left {
   padding: 0;
   width: auto;
 }
 .projects .project-small .project_left_image {
   background: black;
+  width:25%;
   min-width: 179px;
 }
 .projects .project-small .project_right_title {
@@ -288,9 +295,6 @@ body {
 }
 .projects .project-small .project_left_image {
   margin-right: 2.037037037vh;
-}
-.projects .project-small .project_right_title {
-  margin-top: 2.2222222222vh;
 }
 .projects .project_left {
   padding: 9.1666666667vh 3.1481481481vh;
@@ -382,6 +386,6 @@ body {
 .footer .copyright {
   font-size: 1.4814814815vh;
   line-height: 1.8518518519vh;
-  padding: 3.4259259259vh;
+  padding: 1vh;
   text-align: center;
 }

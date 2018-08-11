@@ -1,8 +1,10 @@
 [
   {
-    "title": "project 1"
+    "title": "C++",
+    "slug": "cpp"
   },
   {
-    "title": "project 2"
+    "title": "OpenGL",
+    "slug": "opengl"
   }
 ]

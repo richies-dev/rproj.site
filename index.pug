@@ -9,6 +9,8 @@ html
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css")
     link(rel="stylesheet" href="/style")
 
+    script(src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js")
+
   body
 
     section#redesign_info(style='z-index:1000;position:fixed;top:0px;right:0px;left:0px;bottom:0px;width:100%;background:rgba(255, 255, 255, 0.95);')
@@ -26,8 +28,10 @@ html
 
     //Animated gradient
     section.animated_background.animated_background-top
-      div.animated_background_inner.animated_background_inner-rotated
-        img(src="http://172.30.1.5/bg")
+      div(id="particles-js")
+      script(src="/script")
+      div.animated_background_inner
+        img.animated_background_inner_img(src="/bg")
 
     //For all of the main content
     section.main
@@ -153,3 +157,4 @@ html
             //copyright
             article.copyright
               p.copyright_text Copyright � 2018 Richie Sikra. All Rights Reserved.
+

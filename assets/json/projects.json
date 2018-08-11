@@ -1,8 +1,10 @@
 [
   {
-    "title": "project 1"
+    "title": "StarDive",
+    "slug": "stardive"
   },
   {
-    "title": "project 2"
+    "title": "Aeroflight",
+    "slug": "aeroflight"
   }
 ]
