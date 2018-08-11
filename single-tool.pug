@@ -11,3 +11,8 @@ html
 
   body
     p #{tool.title}
+    h3 Used In
+    br
+    each project in tool.projects
+      a(href="/projects/" + project) #{project}
+      br

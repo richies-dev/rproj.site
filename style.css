@@ -146,6 +146,10 @@ body {
   box-shadow: 0 1px 71px -27px rgba(144, 144, 144, 0.5);
   box-shadow: 0 1px 71px -27px var(111);
 }
+.skill_container_item_tool_title{
+  text-decoration: none;
+  color:#111;
+}
 .skill_container_item-1-2 {
   width: 49%;
 }

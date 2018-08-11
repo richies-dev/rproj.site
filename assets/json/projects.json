@@ -1,10 +1,59 @@
 [
   {
+    "title": "LightShow Framework",
+    "slug": "lightshow",
+    "featured": true
+  },
+  {
     "title": "StarDive",
-    "slug": "stardive"
+    "slug": "stardive",
+    "featured": true
   },
   {
     "title": "Aeroflight",
-    "slug": "aeroflight"
+    "slug": "aeroflight",
+    "featured": true
+  },
+  {
+    "title": "Adventures of Lolo",
+    "slug": "adventuresoflolo",
+    "featured": true
+  },
+  {
+    "title": "DrumChannel",
+    "slug": "drumchannel",
+    "featured": true
+  },
+  {
+    "title": "The old devrichie.com",
+    "slug": "olddevrichie",
+    "featured": false
+  },
+  {
+    "title": "Customer Support form",
+    "slug": "customersupportform",
+    "featured": false
+  },
+  {
+    "title": "devrichie.com",
+    "slug": "devrichie",
+    "featured": false
+  },
+  {
+    "title": "richsikra.com",
+    "slug": "richsikra",
+    "featured": false
+  },
+  {
+    "title": "atmega328 led light strip controller",
+    "slug": "ledlightswitchcontroller",
+    "featured": false
+  },
+  {
+    "title": "Task list creator",
+    "slug": "tasklistcreator",
+    "featured": false
   }
+
+
 ]

@@ -1,10 +1,77 @@
 [
   {
-    "title": "C++",
-    "slug": "cpp"
+    "title": "C++/C",
+    "slug": "cpp",
+    "projects" : ["adventuresoflolo", "lightshow", "ledlightswitchcontroller"]
   },
   {
     "title": "OpenGL",
-    "slug": "opengl"
+    "slug": "opengl",
+    "projects" : ["adventuresoflolo", "lightshow"]
+  },
+  {
+    "title": "Assimp",
+    "slug": "assimp",
+    "projects" : ["lightshow"]
+  },
+  {
+    "title": "C#",
+    "slug": "csharp",
+    "projects" : ["stardive", "aeroflight"]
+  },
+  {
+    "title": "Unity3D",
+    "slug": "unity",
+    "projects" : ["stardive", "aeroflight"]
+  },
+  {
+    "title": "PHP",
+    "slug": "php",
+    "projects" : ["olddevrichie", "drumchannel", "customersupportform"]
+  },
+  {
+    "title": "Javascript",
+    "slug": "javascript",
+    "projects" : ["devrichie", "olddevrichie", "drumchannel", "tasklistcreator", "customersupportform"]
+  },
+  {
+    "title": "HTML",
+    "slug": "html",
+    "projects" : ["devrichie", "olddevrichie", "drumchannel"]
+  },
+  {
+    "title": "PUG",
+    "slug": "pug",
+    "projects" : ["devrichie"]
+  },
+  {
+    "title": "CSS",
+    "slug": "css",
+    "projects" : ["devrichie", "olddevrichie", "drumchannel"]
+  },
+  {
+    "title": "Node JS",
+    "slug": "nodejs",
+    "projects" : ["devrichie"]
+  },
+  {
+    "title": "Angular JS",
+    "slug": "angularjs",
+    "projects" : ["drumchannel"]
+  },
+  {
+    "title": "Wordpress",
+    "slug": "wordpress",
+    "projects" : ["drumchannel", "richsikra"]
+  },
+  {
+    "title": "Woocommerce",
+    "slug": "woocommerce",
+    "projects" : ["drumchannel"]
+  },
+  {
+    "title": "Sensei",
+    "slug": "sensei",
+    "projects" : ["drumchannel"]
   }
 ]

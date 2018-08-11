@@ -11,4 +11,5 @@ html
 
   body
     each project in projects
-      p #{project.title}
+      a(href="/projects/" + project.slug) #{project.title}
+      br

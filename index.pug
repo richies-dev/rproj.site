@@ -69,17 +69,15 @@ html
               
           div.skill_container_item.skill_container_item-1-2
             header
-              h2 Skills
-            p 
-              ='C++, OpenGL, Assimp'
-              br 
-              ='C#, Unity3D'
-              br 
-              ='PHP, Javascript, HTML, CSS'
-              br 
-              ='NodeJS, AngularJS'
-              br 
-              ='Wordpress, WooCommerce, Sensei'
+              h2 Tools
+              p
+                each tool,index in tools
+                  span(class="skill_container_item_tool")
+                    a(class="skill_container_item_tool_title" href="/tools/" + tool.slug) #{tool.title}
+                  if (index < tools.length - 1)
+                    =", " 
+                  if (((index + 1) % 3) === 0)
+                    br
             
         //My projects
         section.projects

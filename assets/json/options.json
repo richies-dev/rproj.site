@@ -2,7 +2,7 @@
   "navbar":[
     {
       "title":"Projects",
-      "url": "/"
+      "url": "/projects"
     },
     {
       "title":"Tools",

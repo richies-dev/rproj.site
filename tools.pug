@@ -11,4 +11,5 @@ html
 
   body
     each tool in tools
-      p #{tool.title}
+      a(href="/tools/" + tool.slug) #{tool.title}
+      br
