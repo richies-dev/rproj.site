@@ -12,6 +12,36 @@ const toolsJson     = require(__dirname + "/assets/json/tools.json",    'utf8');
 
 
 
+projectsJson.forEach(project => {
+      
+  project.tools = [];
+
+});
+
+toolsJson.forEach(tool => {
+
+  var projectSlugs = tool.projects;
+  var toolsProjects = [];
+
+  projectSlugs.forEach(projectSlug => {
+
+    projectsJson.forEach(project => {
+      
+      if(project.slug === projectSlug){
+        toolsProjects.push(project);
+        project.tools.push(tool);
+      }
+
+    });
+
+  });
+
+
+  tool.projects = toolsProjects;
+
+});
+
+
 
 const server = http.createServer((req, res) => {
 
@@ -29,20 +59,21 @@ const server = http.createServer((req, res) => {
   }
 
   // Create page for every project (example.com/projects/slug and example.com/projects/slug/)
-  projectsJson.forEach(element => {
+  projectsJson.forEach(project => {
 
-    if (req.url === ("/projects/" + element.slug) || 
-        req.url === ("/projects/" + element.slug) + "/"){
+    
+    if (req.url === ("/projects/" + project.slug) || 
+        req.url === ("/projects/" + project.slug) + "/"){
 
-        res.statusCode = 200;
-        res.setHeader("Content-Type", "text/html");
-        const compiledPug = pug.renderFile(__dirname + "/single-project.pug", {
-          options: options,
-          projects: projectsJson,
-          project: element
-        });
-        
-        res.end(compiledPug);          
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "text/html");
+      const compiledPug = pug.renderFile(__dirname + "/single-project.pug", {
+        options: options,
+        projects: projectsJson,
+        project: project
+      });
+      
+      res.end(compiledPug);          
     }
   });
   

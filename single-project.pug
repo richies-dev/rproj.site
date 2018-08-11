@@ -11,3 +11,8 @@ html
 
   body
     p #{project.title}
+    h3 Tools Used    
+    each tool in project.tools
+      a(href="/tools/" + tool.slug) #{tool.title}
+      br
+    a(href="/projects") View all projects
