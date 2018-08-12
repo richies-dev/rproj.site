@@ -1,6 +1,5 @@
 doctype html
 html
-
   head
     meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(charset="utf-8")
@@ -9,10 +8,52 @@ html
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css")
     link(rel="stylesheet" href="/style")
 
+    script(src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js")
+
   body
-    p #{tool.title}
-    h3 Used In
-    each project in tool.projects
-      a(href="/projects/" + project.slug) #{project.title}
-      br
-    a(href="/tools") View all tools
+
+    //Animated gradient
+    section.animated_background.animated_background-top
+      div.animated_background_inner
+        // img.animated_background_inner_img(src="/bg")
+
+    //For all of the main content
+    section.main
+
+      //The highest point of the page which content can be rendered on - used for the navbar
+      section.top
+        nav
+          header
+            h1.name
+              a(href="/") Richie Sikra
+            ul.navbar  
+              each item in options.navbar
+                li.navbar_item 
+                  a(href=item.url) #{item.title}
+
+      //Quick summary
+      section.top_content
+        
+      //The main content of the site
+      section.content
+        div.single_tool
+          h2 #{tool.title}
+          h3 Used In
+          each project in tool.projects
+            a(href="/projects/" + project.slug) #{project.title}
+            br
+          a(href="/tools") View all tools
+      
+    //The footer of the website
+    section.footer
+      section.footer_inner
+        //social media icons
+        div.icons.icons-center
+          a.icons_icon
+            img.icons_icon_image
+          a.icons_icon
+            img.icons_icon_image
+
+        //copyright
+        article.copyright
+          p.copyright_text Copyright � 2018 Richie Sikra. All Rights Reserved.

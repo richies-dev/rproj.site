@@ -12,20 +12,7 @@ html
     script(src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js")
 
   body
-
-    section#redesign_info(style='z-index:1000;position:fixed;top:0px;right:0px;left:0px;bottom:0px;width:100%;background:rgba(255, 255, 255, 0.95);')
-      div(style='width:90%;max-width:960px;margin:20vh auto;padding:0px;font-size:18px;position:  relative;')
-        h1(style='font-size: 32px;display:inline;line-height:1;') Under Construction
-        i.fas.fa-times(style='right:0;display:inline;float:right;cursor:pointer;color:#ff5858;line-height:1.5;font-size:24px;', onclick="document.getElementById('redesign_info').style.display='none';")
-        hr(style='float:none;clear:both;display:block;margin:0;border:none;padding-bottom:32px;')
-        p(style='padding-bottom: 32px;line-height:1.6;font-size:20px;')
-          | Hi,
-          br
-          | Currently my website is being re-designed. What you see now is still a work in progress.
-        p(style='font-size:16px;')
-          | -Richie (richie@devrichie.com)
-          | 7/30/2018
-
+  
     //Animated gradient
     section.animated_background.animated_background-top
       div(id="particles-js")
@@ -40,7 +27,8 @@ html
       section.top
         nav
           header
-            h1.name Richie Sikra
+            h1.name 
+              a(href="/") Richie Sikra
             ul.navbar  
               each item in options.navbar
                 li.navbar_item 

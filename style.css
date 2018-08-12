@@ -393,3 +393,20 @@ body {
   padding: 1vh;
   text-align: center;
 }
+
+
+.tool_list, .project_list, .single_project, .single_tool{
+  background: white;
+  margin: 4% 0;
+  padding: 4.1666666667vh 3.4259259259vh;
+  border-radius: 5px;
+  box-shadow: 0 1px 71px -27px rgba(144, 144, 144, 0.5);
+  box-shadow: 0 1px 71px -27px var(111);
+  font-size: 1.4814814815vh;
+  line-height: 2.7777777778vh;
+}
+.tool_list_item, .project_list_item{
+  background: white;
+  margin-right: 2%;
+  display:inline;
+}
