@@ -2,21 +2,26 @@
   {
     "title": "LightShow Framework",
     "slug": "lightshow",
+    "github": "https://github.com/nanu2000/Light-Show-Engine",
+    "snippet": "Built for future games. Made with love and design patterns",
     "featured": true
   },
   {
     "title": "StarDive",
     "slug": "stardive",
+    "snippet": "One of my favorites",
     "featured": true
   },
   {
     "title": "Aeroflight",
     "slug": "aeroflight",
+    "snippet": "My first published project",
     "featured": true
   },
   {
     "title": "Adventures of Lolo",
     "slug": "adventuresoflolo",
+    "snippet": "Made for the NES Box art game jam in 2015",
     "featured": true
   },
   {
@@ -27,33 +32,41 @@
   {
     "title": "The old devrichie.com",
     "slug": "olddevrichie",
+    "snippet": "My old website",
+    "github": "https://github.com/nanu2000/Devrichie-Old",
     "featured": false
   },
   {
     "title": "Customer Support form",
     "slug": "customersupportform",
+    "snippet": "A backend interface for customer support",
     "featured": false
   },
   {
     "title": "devrichie.com",
     "slug": "devrichie",
+    "snippet": "A showcase of all my work",
+    "github": "https://github.com/nanu2000/devrichie.com",
     "featured": false
   },
   {
     "title": "richsikra.com",
     "slug": "richsikra",
+    "snippet": "A simple wordpress website",
     "featured": false
   },
   {
     "title": "atmega328 led light strip controller",
     "slug": "ledlightswitchcontroller",
+    "snippet": "An LED light strip controller, built to run on the atmega328 microcontroller",
+    "github": "https://github.com/nanu2000/Led-Light-Strip-Controller",
     "featured": false
   },
   {
     "title": "Task list creator",
     "slug": "tasklistcreator",
+    "snippet": "A simple task list creator built in a couple days for an old job",
+    "github": "https://github.com/nanu2000/Task-List-Creator",
     "featured": false
   }
-
-
 ]

@@ -38,6 +38,14 @@ html
       section.content
         div.single_project
           h2 #{project.title}
+          
+          if(project.snippet)
+            div.single_project_snippet #{project.snippet}
+
+          if(project.github)
+            div.single_project_github
+              a(href=project.github) View on Github         
+
           h3 Tools Used    
           each tool in project.tools
             a(href="/tools/" + tool.slug) #{tool.title}
