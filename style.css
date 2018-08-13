@@ -34,6 +34,10 @@ body {
   overflow:hidden;
 }
 
+.animated_background-small {
+  height: 100%;
+}
+
 .animated_background .animated_background_inner {
   display: block;
 }
@@ -73,6 +77,10 @@ body {
   border-right: 100vw solid transparent;
   top: 0;
 }
+
+.animated_background-small .animated_background_inner:after {
+  border: none;
+}
 .animated_background.animated_background-relative {
   box-sizing: content-box;
   position: relative;
@@ -91,6 +99,10 @@ body {
 .top .name {
   font-size: 1.8518518519vh;
   float: left;
+}
+.top .name a{
+  text-decoration: none;
+  color:white;
 }
 
 .navbar {
@@ -397,16 +409,25 @@ body {
 
 .tool_list, .project_list, .single_project, .single_tool{
   background: white;
-  margin: 4% 0;
-  padding: 4.1666666667vh 3.4259259259vh;
+  margin: 4% 0 14% 0;
+  padding: 4.1666666667vh 6%;
   border-radius: 5px;
   box-shadow: 0 1px 71px -27px rgba(144, 144, 144, 0.5);
   box-shadow: 0 1px 71px -27px var(111);
   font-size: 1.4814814815vh;
-  line-height: 2.7777777778vh;
+  line-height: 1.7;
 }
 .tool_list_item, .project_list_item{
-  background: white;
   margin-right: 2%;
   display:inline;
+  line-height: 3;
+  text-decoration: none;
+  word-wrap: break-word;
+  font-size: 1.4814814815vh;
+}
+
+.tool_list_title, .project_list_title{
+  text-align: center;
+  margin-bottom: 2vh;
+  font-size: 1.8518518519vh;
 }

@@ -13,7 +13,7 @@ html
   body
 
     //Animated gradient
-    section.animated_background.animated_background-top
+    section.animated_background.animated_background-top.animated_background-small
       div.animated_background_inner
         // img.animated_background_inner_img(src="/bg")
 
@@ -37,6 +37,7 @@ html
       //The main content of the site
       section.content
         div.project_list
+          div.project_list_title Projects
           each project in projects
             a.project_list_item(href="/projects/" + project.slug) #{project.title}
       
