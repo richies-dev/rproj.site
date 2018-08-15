@@ -38,9 +38,13 @@ html
       section.content
         div.project_list
           div.project_list_title Projects
-          each project in projects
+          each project,index in projects
             a.project_list_item(href="/projects/" + project.slug) #{project.title}
-      
+            if (index < projects.length - 1 && ((index + 1) % 3) === 0)
+              br
+            else if(index < projects.length - 1)
+              ="-"
+
     //The footer of the website
     section.footer
       section.footer_inner
@@ -50,7 +54,12 @@ html
             img.icons_icon_image
           a.icons_icon
             img.icons_icon_image
-
+        nav
+          ul.footer_navbar
+            each item in options.navbar
+              li.footer_navbar_item 
+                a(href=item.url) #{item.title}
+                
         //copyright
         article.copyright
           p.copyright_text Copyright � 2018 Richie Sikra. All Rights Reserved.

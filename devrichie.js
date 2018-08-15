@@ -18,28 +18,43 @@ projectsJson.forEach(project => {
 
 });
 
+
+var allTools = [];
+var normalTools = [];
+var featuredTools = [];
+
 toolsJson.forEach(tool => {
 
   var projectSlugs = tool.projects;
   var toolsProjects = [];
 
   projectSlugs.forEach(projectSlug => {
-
     projectsJson.forEach(project => {
-      
+
       if(project.slug === projectSlug){
         toolsProjects.push(project);
         project.tools.push(tool);
       }
 
     });
-
   });
 
-
   tool.projects = toolsProjects;
+  
+  if(tool.featured === false){
+    normalTools.push(tool);
+  }else{
+    featuredTools.push(tool);
+  }
 
 });
+
+
+allTools = featuredTools.concat(normalTools);
+
+allTools.sort     ((a, b) => a.order - b.order);
+normalTools.sort  ((a, b) => a.order - b.order);
+featuredTools.sort((a, b) => a.order - b.order);
 
 
 
@@ -51,9 +66,10 @@ const server = http.createServer((req, res) => {
     res.setHeader("Content-Type", "text/html");
     const compiledPug = pug.renderFile(__dirname + "/index.pug", {
       options: options,
-      tools: toolsJson,
-      projects: projectsJson
-
+      tools: allTools,
+      projects: projectsJson,
+      featuredTools: featuredTools,
+      normalTools: normalTools
     });
     res.end(compiledPug);
   }
@@ -88,8 +104,10 @@ const server = http.createServer((req, res) => {
         res.setHeader("Content-Type", "text/html");
         const compiledPug = pug.renderFile(__dirname + "/single-tool.pug", {
           options: options,
-          tools: toolsJson,
-          tool: element
+          tools: allTools,
+          tool: element,
+          featuredTools: featuredTools,
+          normalTools: normalTools
         });
         
         res.end(compiledPug);          
@@ -113,7 +131,9 @@ const server = http.createServer((req, res) => {
     res.setHeader("Content-Type", "text/html");
     const compiledPug = pug.renderFile(__dirname + "/tools.pug", {
       options: options,
-      tools: toolsJson
+      tools: allTools,
+      featuredTools: featuredTools,
+      normalTools: normalTools
     });
     res.end(compiledPug);
   }

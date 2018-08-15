@@ -1,75 +1,105 @@
 [
   {
+    "featured": true,
+    "order": 1,
     "title": "C++/C",
     "slug": "cpp",
     "projects" : ["adventuresoflolo", "lightshow", "ledlightswitchcontroller"]
   },
   {
+    "featured": true,
+    "order": 2,
     "title": "OpenGL",
     "slug": "opengl",
     "projects" : ["adventuresoflolo", "lightshow"]
   },
   {
-    "title": "Assimp",
-    "slug": "assimp",
-    "projects" : ["lightshow"]
-  },
-  {
-    "title": "C#",
-    "slug": "csharp",
-    "projects" : ["stardive", "aeroflight"]
-  },
-  {
-    "title": "Unity3D",
-    "slug": "unity",
-    "projects" : ["stardive", "aeroflight"]
-  },
-  {
+    "featured": true,
+    "order": 3,
     "title": "PHP",
     "slug": "php",
     "projects" : ["olddevrichie", "drumchannel", "customersupportform"]
   },
   {
+    "featured": false,
+    "order": 4,
     "title": "Javascript",
     "slug": "javascript",
     "projects" : ["devrichie", "olddevrichie", "drumchannel", "tasklistcreator", "customersupportform"]
   },
   {
+    "featured": false,
+    "order": 5,
+    "title": "Assimp",
+    "slug": "assimp",
+    "projects" : ["lightshow"]
+  },
+  {
+    "featured": false,
+    "order": 6,
+    "title": "C#",
+    "slug": "csharp",
+    "projects" : ["stardive", "aeroflight"]
+  },
+  {
+    "featured": true,
+    "order": 7,
+    "title": "Unity3D",
+    "slug": "unity",
+    "projects" : ["stardive", "aeroflight"]
+  },
+  {
+    "featured": false,
+    "order": 8,
     "title": "HTML",
     "slug": "html",
     "projects" : ["devrichie", "olddevrichie", "drumchannel"]
   },
   {
+    "featured": true,
+    "order": 9,
     "title": "PUG",
     "slug": "pug",
     "projects" : ["devrichie"]
   },
   {
+    "featured": false,
+    "order": 10,
     "title": "CSS",
     "slug": "css",
     "projects" : ["devrichie", "olddevrichie", "drumchannel"]
   },
   {
+    "featured": true,
+    "order": 11,
     "title": "Node JS",
     "slug": "nodejs",
     "projects" : ["devrichie"]
   },
   {
+    "featured": false,
+    "order": 12,
     "title": "Angular JS",
     "slug": "angularjs",
     "projects" : ["drumchannel"]
   },
   {
+    "featured": true,
+    "order": 13,
     "title": "Wordpress",
     "slug": "wordpress",
     "projects" : ["drumchannel", "richsikra"]
   },
   {
+    "featured": false,
+    "order": 14,
     "title": "Woocommerce",
     "slug": "woocommerce",
     "projects" : ["drumchannel"]
   },
   {
+    "featured": false,
+    "order": 15,
     "title": "Sensei",
     "slug": "sensei",
     "projects" : ["drumchannel"]

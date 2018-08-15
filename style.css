@@ -25,13 +25,16 @@ body {
 }
 
 .animated_background {
-  height: 79.6296296296vh;
   position: absolute;
   width: 100%;
   box-sizing: border-box;
   z-index: -2;
   background: linear-gradient(35deg,#27676d, #50508a)!important;
   overflow:hidden;
+}
+.animated_background-top {
+  height: 79.6296296296vh;
+  border-bottom: 5px solid #fafafa;
 }
 
 .animated_background-small {
@@ -61,9 +64,7 @@ body {
   height: 0;
   content: "";
 }
-.animated_background-top {
-  border-bottom: 5px solid #fafafa;
-}
+
 .animated_background-bottom {
   border-top: 5px solid #fafafa;
 }
@@ -117,6 +118,20 @@ body {
   color: white;
   text-decoration: none;
 }
+.footer_navbar{
+  display:block;
+  text-align: center;
+}
+.footer_navbar_item {
+  display:inline;
+}
+.footer_navbar_item > a {
+  font-size: 1.4814814815vh;
+  color: #333;
+  text-decoration: none;
+  line-height: 2;
+  margin:0 5px;
+}
 
 .top_content {
   margin-top: 12.7777777778vh;
@@ -158,9 +173,15 @@ body {
   box-shadow: 0 1px 71px -27px rgba(144, 144, 144, 0.5);
   box-shadow: 0 1px 71px -27px var(111);
 }
+.skill_container_view_all_tools{
+  line-height: 2.7777777778vh;
+  font-size: 1.4814814815vh;
+}
 .skill_container_item_tool_title{
   text-decoration: none;
   color:#111;
+  line-height: 2.7777777778vh;
+  margin-right: 4%;
 }
 .skill_container_item-1-2 {
   width: 49%;
@@ -382,6 +403,7 @@ body {
   width: 100%;
 }
 .footer_inner {
+  padding: 7px 0;
   background: white;
 }
 .footer .icons {
@@ -406,6 +428,9 @@ body {
   text-align: center;
 }
 
+.tool_list, .project_list{
+  text-align: center;
+}
 
 .tool_list, .project_list, .single_project, .single_tool{
   background: white;
@@ -418,16 +443,14 @@ body {
   line-height: 1.7;
 }
 .tool_list_item, .project_list_item{
-  margin-right: 2%;
+  margin: 0 1%;
   display:inline;
   line-height: 3;
   text-decoration: none;
-  word-wrap: break-word;
   font-size: 1.4814814815vh;
 }
 
 .tool_list_title, .project_list_title{
-  text-align: center;
   margin-bottom: 2vh;
   font-size: 1.8518518519vh;
 }
