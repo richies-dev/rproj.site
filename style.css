@@ -194,19 +194,20 @@ body {
   font-size: 1.4814814815vh;
   line-height: 2.7777777778vh;
 }
+.skill_container_item {
+  min-height: 26.8518518519vh;
+}
 @media all and (max-width: 640px) {
   .skill_container {
     flex-wrap: wrap;
   }
   .skill_container_item {
     margin-bottom: 2%;
+    min-height: 0;
   }
   .skill_container_item-1-2 {
     width: 100%;
   }
-}
-.skill_container_item {
-  min-height: 26.8518518519vh;
 }
 
 .projects {
@@ -353,6 +354,13 @@ body {
   max-width: 520px;
   margin: 0 auto;
 }
+
+@media all and (max-width: 640px) {
+  .contact_form {
+    margin: 0 40px;
+  }
+}
+
 .contact_form_header {
   margin-top: 9.2592592593vh;
   margin-bottom: 3.4259259259vh;
