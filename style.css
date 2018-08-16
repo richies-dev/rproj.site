@@ -181,7 +181,7 @@ body {
   text-decoration: none;
   color:#111;
   line-height: 2.7777777778vh;
-  margin-right: 4%;
+  margin-right: 5px;
 }
 .skill_container_item-1-2 {
   width: 49%;
@@ -451,7 +451,7 @@ body {
   line-height: 1.7;
 }
 .tool_list_item, .project_list_item{
-  margin: 0 1%;
+  margin: 0 5px;
   display:inline;
   line-height: 3;
   text-decoration: none;

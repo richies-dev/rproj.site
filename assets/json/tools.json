@@ -3,6 +3,8 @@
     "featured": true,
     "order": 1,
     "title": "C++/C",
+    "use": "C++ is a general purpose programming language.",
+    "references": ["http://www.stroustrup.com/C++.html"],
     "slug": "cpp",
     "projects" : ["adventuresoflolo", "lightshow", "ledlightswitchcontroller"]
   },
@@ -10,6 +12,8 @@
     "featured": true,
     "order": 2,
     "title": "OpenGL",
+    "use": "OpenGL is the premier environment for developing portable, interactive 2D and 3D graphics applications.",
+    "references": ["https://www.opengl.org"],
     "slug": "opengl",
     "projects" : ["adventuresoflolo", "lightshow"]
   },
@@ -17,6 +21,8 @@
     "featured": true,
     "order": 3,
     "title": "PHP",
+    "use": "PHP is a popular general-purpose scripting language that is especially suited to web development.",
+    "references": ["php.net"],
     "slug": "php",
     "projects" : ["olddevrichie", "drumchannel", "customersupportform"]
   },
@@ -24,6 +30,8 @@
     "featured": false,
     "order": 4,
     "title": "Javascript",
+    "use": "JavaScript (JS) is a lightweight interpreted or JIT-compiled programming language with first-class functions.",
+    "references": ["https://developer.mozilla.org/en-US/docs/Web/JavaScript"],
     "slug": "javascript",
     "projects" : ["devrichie", "olddevrichie", "drumchannel", "tasklistcreator", "customersupportform"]
   },
@@ -31,6 +39,8 @@
     "featured": false,
     "order": 5,
     "title": "Assimp",
+    "use": "Open Asset Import Library (short name: Assimp) is a portable Open Source library to import various well-known 3D model formats in a uniform manner.",
+    "references": ["http://www.assimp.org/"],
     "slug": "assimp",
     "projects" : ["lightshow"]
   },
@@ -38,6 +48,8 @@
     "featured": false,
     "order": 6,
     "title": "C#",
+    "use": "C# (pronounced \"See Sharp\") is a simple, modern, object-oriented, and type-safe programming language.",
+    "references": ["https://docs.microsoft.com/en-us/dotnet/csharp/"],
     "slug": "csharp",
     "projects" : ["stardive", "aeroflight"]
   },
@@ -45,6 +57,8 @@
     "featured": true,
     "order": 7,
     "title": "Unity3D",
+    "use": "The Unity Editor is a creative hub for artists, designers, developers, and other team members.",
+    "references": ["https://unity3d.com/"],
     "slug": "unity",
     "projects" : ["stardive", "aeroflight"]
   },
@@ -52,13 +66,17 @@
     "featured": false,
     "order": 8,
     "title": "HTML",
+    "use": "HTML (HyperText Markup Language) is the most basic building block of the Web. It describes and defines the content of a webpage along with the basic layout of the webpage.",
+    "references": ["https://www.w3.org/People/Berners-Lee/", "https://developer.mozilla.org/en-US/docs/Web/HTML"],
     "slug": "html",
-    "projects" : ["devrichie", "olddevrichie", "drumchannel"]
+    "projects" : ["olddevrichie", "drumchannel"]
   },
   {
     "featured": true,
     "order": 9,
     "title": "PUG",
+    "use": "Pug is a high-performance template engine heavily influenced by Haml and implemented with JavaScript for Node.js and browsers. Formally named \"Jade\"",
+    "references": ["https://pugjs.org"],
     "slug": "pug",
     "projects" : ["devrichie"]
   },
@@ -66,13 +84,17 @@
     "featured": false,
     "order": 10,
     "title": "CSS",
+    "use": "Cascading Style Sheets (CSS) is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents.",
+    "references": ["https://www.w3.org/Style/CSS/Overview.en.html", "https://developer.mozilla.org/en-US/docs/Web/CSS"],
     "slug": "css",
-    "projects" : ["devrichie", "olddevrichie", "drumchannel"]
+    "projects" : ["olddevrichie", "drumchannel"]
   },
   {
     "featured": true,
     "order": 11,
     "title": "Node JS",
+    "use": "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+    "references": ["https://nodejs.org/en/"],
     "slug": "nodejs",
     "projects" : ["devrichie"]
   },
@@ -80,13 +102,17 @@
     "featured": false,
     "order": 12,
     "title": "Angular JS",
+    "use": "AngularJS is a structural framework for dynamic web apps.",
+    "references": ["https://angularjs.org/"],
     "slug": "angularjs",
     "projects" : ["drumchannel"]
   },
   {
     "featured": true,
     "order": 13,
-    "title": "Wordpress",
+    "title": "WordPress",
+    "use": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+    "references": ["https://wordpress.org/"],
     "slug": "wordpress",
     "projects" : ["drumchannel", "richsikra"]
   },
@@ -94,6 +120,8 @@
     "featured": false,
     "order": 14,
     "title": "Woocommerce",
+    "use": "WooCommerce is a free eCommerce plugin that allows you to sell anything, beautifully. Built to integrate seamlessly with WordPress, WooCommerce is the world's favorite eCommerce solution that gives both store owners and developers complete control.",
+    "references": ["https://woocommerce.com/"],
     "slug": "woocommerce",
     "projects" : ["drumchannel"]
   },
@@ -101,7 +129,72 @@
     "featured": false,
     "order": 15,
     "title": "Sensei",
+    "use": "A learning management plugin for WordPress, which provides the smoothest platform for helping you teach anything.",
+    "references": ["https://woocommerce.com/products/sensei/"],
     "slug": "sensei",
     "projects" : ["drumchannel"]
+  },
+  {
+    "featured": false,
+    "order": 16,
+    "title": "Vagrant",
+    "use": "Vagrant is a tool for building and managing virtual machine environments in a single workflow.",
+    "references": ["https://www.vagrantup.com/"],
+    "slug": "vagrant",
+    "projects" : ["devrichie", "olddevrichie", "drumchannel", "richsikra"]
+  },
+  {
+    "featured": true,
+    "order": 17,
+    "title": "Varnish",
+    "use": "Varnish Cache is a web application accelerator also known as a caching HTTP reverse proxy.",
+    "references": ["https://varnish-cache.org/"],
+    "slug": "varnish",
+    "projects" : ["drumchannel"]
+  },
+  {
+    "featured": false,
+    "order": 18,
+    "title": "Nginx",
+    "use": "NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server.",
+    "references": ["https://www.nginx.com/"],
+    "slug": "nginx",
+    "projects" : ["drumchannel", "devrichie"]
+  },
+  {
+    "featured": false,
+    "order": 19,
+    "title": "Apache",
+    "use": "The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows. The goal of this project is to provide a secure, efficient and extensible server that provides HTTP services in sync with the current HTTP standards.",
+    "references": ["https://httpd.apache.org/"],
+    "slug": "apache",
+    "projects" : ["drumchannel", "olddevrichie", "richsikra"]
+  },
+  {
+    "featured": true,
+    "order": 20,
+    "title": "Stunnel",
+    "use": "Stunnel is a proxy designed to add TLS encryption functionality to existing clients and servers without any changes in the programs' code. Its architecture is optimized for security, portability, and scalability (including load-balancing), making it suitable for large deployments.",
+    "references": ["https://www.stunnel.org/"],
+    "slug": "stunnel",
+    "projects" : ["drumchannel"]
+  },
+  {
+    "featured": false,
+    "order": 21,
+    "title": "Git",
+    "use": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+    "references": ["https://git-scm.com/"],
+    "slug": "git",
+    "projects" : ["ledlightswitchcontroller", "lightshow", "drumchannel", "tasklistcreator", "customersupportform", "olddevrichie", "devrichie"]
+  },
+  {
+    "featured": false,
+    "order": 22,
+    "title": "SCSS",
+    "use": "Sass is an extension of CSS that adds power and elegance to the basic language. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax.",
+    "references": ["https://sass-lang.com/"],
+    "slug": "scss",
+    "projects" : ["devrichie", "drumchannel"]
   }
 ]
