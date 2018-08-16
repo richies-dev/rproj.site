@@ -37,15 +37,15 @@ html
       //The main content of the site
       section.content
         div.single_project
-          h2 #{project.title}
-          
+          h2.single_project_title #{project.title}
+          br
           if(project.snippet)
             div.single_project_snippet #{project.snippet}
-
+            br
           if(project.github)
             div.single_project_github
               a(href=project.github) View on Github         
-
+            br
           h3 Tools Used    
           each tool in project.tools
             a(href="/tools/" + tool.slug) #{tool.title}

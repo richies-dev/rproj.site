@@ -4,7 +4,12 @@
     "order": 1,
     "title": "C++/C",
     "use": "C++ is a general purpose programming language.",
-    "references": ["http://www.stroustrup.com/C++.html"],
+    "references": [
+      {
+        "url":"http://www.stroustrup.com/C++.html",
+        "title":"Bjarne Stroustrup's website"
+      }
+    ],
     "slug": "cpp",
     "projects" : ["adventuresoflolo", "lightshow", "ledlightswitchcontroller"]
   },
@@ -13,7 +18,12 @@
     "order": 2,
     "title": "OpenGL",
     "use": "OpenGL is the premier environment for developing portable, interactive 2D and 3D graphics applications.",
-    "references": ["https://www.opengl.org"],
+    "references": [
+      {
+        "url":"https://www.opengl.org",
+        "title":"opengl.org"
+      }
+    ],
     "slug": "opengl",
     "projects" : ["adventuresoflolo", "lightshow"]
   },
@@ -22,7 +32,11 @@
     "order": 3,
     "title": "PHP",
     "use": "PHP is a popular general-purpose scripting language that is especially suited to web development.",
-    "references": ["php.net"],
+    "references": [
+      {
+        "url":"php.net",
+        "title":"php.net"
+      }],
     "slug": "php",
     "projects" : ["olddevrichie", "drumchannel", "customersupportform"]
   },
@@ -31,7 +45,12 @@
     "order": 4,
     "title": "Javascript",
     "use": "JavaScript (JS) is a lightweight interpreted or JIT-compiled programming language with first-class functions.",
-    "references": ["https://developer.mozilla.org/en-US/docs/Web/JavaScript"],
+    "references": [
+      {
+        "title": "Mozilla's Javascript reference", 
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      }
+    ],
     "slug": "javascript",
     "projects" : ["devrichie", "olddevrichie", "drumchannel", "tasklistcreator", "customersupportform"]
   },
@@ -40,7 +59,11 @@
     "order": 5,
     "title": "Assimp",
     "use": "Open Asset Import Library (short name: Assimp) is a portable Open Source library to import various well-known 3D model formats in a uniform manner.",
-    "references": ["http://www.assimp.org/"],
+    "references": [
+      {
+        "url":"http://www.assimp.org/",
+        "title":"assimp.org"
+      }],
     "slug": "assimp",
     "projects" : ["lightshow"]
   },
@@ -49,7 +72,11 @@
     "order": 6,
     "title": "C#",
     "use": "C# (pronounced \"See Sharp\") is a simple, modern, object-oriented, and type-safe programming language.",
-    "references": ["https://docs.microsoft.com/en-us/dotnet/csharp/"],
+    "references": [
+      {
+        "url":"https://docs.microsoft.com/en-us/dotnet/csharp/",
+        "title":"Microsoft C# docs"
+      }],
     "slug": "csharp",
     "projects" : ["stardive", "aeroflight"]
   },
@@ -58,7 +85,11 @@
     "order": 7,
     "title": "Unity3D",
     "use": "The Unity Editor is a creative hub for artists, designers, developers, and other team members.",
-    "references": ["https://unity3d.com/"],
+    "references": [
+      {
+        "url":"https://unity3d.com/",
+        "title":"unity3d.com"
+      }],
     "slug": "unity",
     "projects" : ["stardive", "aeroflight"]
   },
@@ -67,7 +98,16 @@
     "order": 8,
     "title": "HTML",
     "use": "HTML (HyperText Markup Language) is the most basic building block of the Web. It describes and defines the content of a webpage along with the basic layout of the webpage.",
-    "references": ["https://www.w3.org/People/Berners-Lee/", "https://developer.mozilla.org/en-US/docs/Web/HTML"],
+    "references": [
+      {
+        "url":"https://www.w3.org/People/Berners-Lee/",
+        "title":"Sir Tim Berners-Lee's Bio"
+      },
+      {
+        "url":"https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "title":"Mozilla's HTML reference"
+      } 
+    ],
     "slug": "html",
     "projects" : ["olddevrichie", "drumchannel"]
   },
@@ -76,7 +116,11 @@
     "order": 9,
     "title": "PUG",
     "use": "Pug is a high-performance template engine heavily influenced by Haml and implemented with JavaScript for Node.js and browsers. Formally named \"Jade\"",
-    "references": ["https://pugjs.org"],
+    "references": [
+      {
+        "url":"https://pugjs.org",
+        "title":"pugjs.org"
+      }],
     "slug": "pug",
     "projects" : ["devrichie"]
   },
@@ -85,7 +129,16 @@
     "order": 10,
     "title": "CSS",
     "use": "Cascading Style Sheets (CSS) is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents.",
-    "references": ["https://www.w3.org/Style/CSS/Overview.en.html", "https://developer.mozilla.org/en-US/docs/Web/CSS"],
+    "references": [
+      {
+        "url":"https://www.w3.org/Style/CSS/Overview.en.html",
+        "title":"w3.org Css overview"
+      },
+      {
+        "url":"https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "title":"Mozilla's CSS reference"
+      }
+    ],
     "slug": "css",
     "projects" : ["olddevrichie", "drumchannel"]
   },
@@ -94,7 +147,11 @@
     "order": 11,
     "title": "Node JS",
     "use": "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
-    "references": ["https://nodejs.org/en/"],
+    "references": [
+      {
+        "url":"https://nodejs.org/en/",
+        "title":"nodejs.org"
+      }],
     "slug": "nodejs",
     "projects" : ["devrichie"]
   },
@@ -103,7 +160,11 @@
     "order": 12,
     "title": "Angular JS",
     "use": "AngularJS is a structural framework for dynamic web apps.",
-    "references": ["https://angularjs.org/"],
+    "references": [
+      {
+        "url":"https://angularjs.org/",
+        "title":"angularjs.org"
+      }],
     "slug": "angularjs",
     "projects" : ["drumchannel"]
   },
@@ -112,7 +173,11 @@
     "order": 13,
     "title": "WordPress",
     "use": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
-    "references": ["https://wordpress.org/"],
+    "references": [
+      {
+        "url":"https://wordpress.org/",
+        "title":"wordpress.org"
+      }],
     "slug": "wordpress",
     "projects" : ["drumchannel", "richsikra"]
   },
@@ -121,7 +186,11 @@
     "order": 14,
     "title": "Woocommerce",
     "use": "WooCommerce is a free eCommerce plugin that allows you to sell anything, beautifully. Built to integrate seamlessly with WordPress, WooCommerce is the world's favorite eCommerce solution that gives both store owners and developers complete control.",
-    "references": ["https://woocommerce.com/"],
+    "references": [
+      {
+        "url":"https://woocommerce.com/",
+        "title":"woocommerce.com"
+      }],
     "slug": "woocommerce",
     "projects" : ["drumchannel"]
   },
@@ -130,7 +199,11 @@
     "order": 15,
     "title": "Sensei",
     "use": "A learning management plugin for WordPress, which provides the smoothest platform for helping you teach anything.",
-    "references": ["https://woocommerce.com/products/sensei/"],
+    "references": [
+      {
+        "url":"https://woocommerce.com/products/sensei/",
+        "title":"woocommerce.com/products/sensei"
+      }],
     "slug": "sensei",
     "projects" : ["drumchannel"]
   },
@@ -139,7 +212,11 @@
     "order": 16,
     "title": "Vagrant",
     "use": "Vagrant is a tool for building and managing virtual machine environments in a single workflow.",
-    "references": ["https://www.vagrantup.com/"],
+    "references": [
+      {
+        "url":"https://www.vagrantup.com/",
+        "title":"vagrantup.com"
+      }],
     "slug": "vagrant",
     "projects" : ["devrichie", "olddevrichie", "drumchannel", "richsikra"]
   },
@@ -148,7 +225,11 @@
     "order": 17,
     "title": "Varnish",
     "use": "Varnish Cache is a web application accelerator also known as a caching HTTP reverse proxy.",
-    "references": ["https://varnish-cache.org/"],
+    "references": [
+      {
+        "url":"https://varnish-cache.org/",
+        "title":"varnish-cache.org"
+      }],
     "slug": "varnish",
     "projects" : ["drumchannel"]
   },
@@ -157,7 +238,11 @@
     "order": 18,
     "title": "Nginx",
     "use": "NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server.",
-    "references": ["https://www.nginx.com/"],
+    "references": [
+      {
+        "url":"https://www.nginx.com/",
+        "title":"nginx.com"
+      }],
     "slug": "nginx",
     "projects" : ["drumchannel", "devrichie"]
   },
@@ -166,7 +251,11 @@
     "order": 19,
     "title": "Apache",
     "use": "The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows. The goal of this project is to provide a secure, efficient and extensible server that provides HTTP services in sync with the current HTTP standards.",
-    "references": ["https://httpd.apache.org/"],
+    "references": [
+      {
+        "url":"https://httpd.apache.org/",
+        "title":"apache.org"
+      }],
     "slug": "apache",
     "projects" : ["drumchannel", "olddevrichie", "richsikra"]
   },
@@ -175,7 +264,11 @@
     "order": 20,
     "title": "Stunnel",
     "use": "Stunnel is a proxy designed to add TLS encryption functionality to existing clients and servers without any changes in the programs' code. Its architecture is optimized for security, portability, and scalability (including load-balancing), making it suitable for large deployments.",
-    "references": ["https://www.stunnel.org/"],
+    "references": [
+      {
+        "url":"https://www.stunnel.org/",
+        "title":"stunnel.org"
+      }],
     "slug": "stunnel",
     "projects" : ["drumchannel"]
   },
@@ -184,7 +277,11 @@
     "order": 21,
     "title": "Git",
     "use": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
-    "references": ["https://git-scm.com/"],
+    "references": [
+      {
+        "url":"https://git-scm.com/",
+        "title":"git-scm.com"
+      }],
     "slug": "git",
     "projects" : ["ledlightswitchcontroller", "lightshow", "drumchannel", "tasklistcreator", "customersupportform", "olddevrichie", "devrichie"]
   },
@@ -193,7 +290,11 @@
     "order": 22,
     "title": "SCSS",
     "use": "Sass is an extension of CSS that adds power and elegance to the basic language. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax.",
-    "references": ["https://sass-lang.com/"],
+    "references": [
+      {
+        "url":"https://sass-lang.com/",
+        "title":"sass-lang.com"
+      }],
     "slug": "scss",
     "projects" : ["devrichie", "drumchannel"]
   }

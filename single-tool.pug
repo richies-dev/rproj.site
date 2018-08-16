@@ -37,10 +37,23 @@ html
       //The main content of the site
       section.content
         div.single_tool
-          h2 #{tool.title}
+          h2.single_tool_title #{tool.title}
+          br
+          if(tool.use)
+            div.single_tool_snippet #{tool.use}
+            br            
           h3 Used In
-          each project in tool.projects
-            a(href="/projects/" + project.slug) #{project.title}
+          div.single_tool_projects
+            each project in tool.projects
+              a(href="/projects/" + project.slug) #{project.title}
+              br
+          if(tool.references)
+            br
+            div.single_tool_references
+              h3 References    
+              each reference in tool.references
+                a(href=reference.url) #{reference.title}
+                br
             br
           a(href="/tools") View all tools
           //The footer of the website
