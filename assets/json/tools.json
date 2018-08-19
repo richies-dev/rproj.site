@@ -11,7 +11,7 @@
       }
     ],
     "slug": "cpp",
-    "projects" : ["adventuresoflolo", "lightshow", "ledlightswitchcontroller"]
+    "projects" : ["adventuresofloloexcl", "lightshow", "ledlightswitchcontroller"]
   },
   {
     "featured": true,
@@ -25,7 +25,7 @@
       }
     ],
     "slug": "opengl",
-    "projects" : ["adventuresoflolo", "lightshow"]
+    "projects" : ["adventuresofloloexcl", "lightshow"]
   },
   {
     "featured": true,

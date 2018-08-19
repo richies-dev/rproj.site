@@ -111,12 +111,12 @@ body {
 }
 .navbar_item {
   float: left;
-  margin-left: 5px;
 }
 .navbar_item > a {
   font-size: 1.4814814815vh;
   color: white;
   text-decoration: none;
+  margin-left: 16px;
 }
 .footer_navbar{
   display:block;
@@ -411,7 +411,7 @@ body {
   width: 100%;
 }
 .footer_inner {
-  padding: 7px 0;
+  padding: 21px 0;
   background: white;
 }
 .footer .icons {
