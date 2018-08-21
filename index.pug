@@ -25,15 +25,7 @@ html
 
       //The highest point of the page which content can be rendered on - used for the navbar
       section.top
-        nav
-          header
-            h1.name 
-              a(href="/") Richie Sikra
-            ul.navbar  
-              each item in options.navbar
-                li.navbar_item 
-                  a(href=item.url) #{item.title}
-
+        include templates/main/navbar.pug
       //Quick summary
       section.top_content
         header.top_content_header.top_content_header-main Hi, I'm Richie
@@ -130,40 +122,5 @@ html
             
     section.animated_background.animated_background-relative.animated_background-bottom
       section.animated_background_inner.animated_background_inner-rotated
-
-        //The contact form should send an email to me and prompt a captcha
-        article.contact_form
-
-          header.contact_form_header
-            h2 Contact Me
-          form(action='#')
-            label.contact_form_label Name
-            input.contact_form_input.contact_form_input-field(placeholder='Your name' type='text' autocomplete='name')
-
-            label.contact_form_label Email Address
-            input.contact_form_input.contact_form_input-field(placeholder='Your email' type='email' autocomplete='email')
-
-            label.contact_form_label Message
-            textarea.contact_form_input.contact_form_input-textarea(placeholder='How can I help you?')
-
-            input.contact_form_input.contact_form_input-submit(value='Send message' type='submit')
-
-        //The footer of the website
-        section.footer
-          section.footer_inner
-            //social media icons
-            //div.icons.icons-center
-              a.icons_icon
-                img.icons_icon_image
-              a.icons_icon
-                img.icons_icon_image
-            nav
-              ul.footer_navbar
-                each item in options.navbar
-                  li.footer_navbar_item 
-                    a(href=item.url) #{item.title}
-
-            //copyright
-            article.copyright
-              p.copyright_text Copyright � 2018 Richie Sikra. All Rights Reserved.
-
+        include templates/main/contact-form.pug
+        include templates/main/footer.pug

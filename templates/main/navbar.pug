@@ -1,0 +1,9 @@
+//The navbar of the website
+nav
+  header
+    h1.name 
+      a(href="/") Richie Sikra
+    ul.navbar  
+      each item in options.navbar
+        li.navbar_item
+          a(href=item.url) #{item.title}
