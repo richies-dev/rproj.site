@@ -5,6 +5,8 @@ html
 
     //Animated gradient
     section.animated_background.animated_background-top.animated_background-small
+      div(id="particles-js")
+      script(src="/script")
       div.animated_background_inner
         // img.animated_background_inner_img(src="/bg")
 
@@ -21,37 +23,25 @@ html
               each item in options.navbar
                 li.navbar_item 
                   a(href=item.url) #{item.title}
+        
+        article
+          h1.project_header(style="margin-top:27vh;font-size:2.2222222222vh;")
+            =project.title
+            
+          h3.project_header_tools(style="margin-top:1vh;font-size:1.4814814815vh;")
+            each tool,index in project.tools
+              if (index < 3 && index + 1 < project.tools.length)
+                = tool.title + ", "
+              else if (index >= 3 && index + 1 < project.tools.length)
+                = tool.title + ".."
+                - break
+              else
+                = tool.title + "."
 
-      //Quick summary
-      section.top_content
+
         
       //The main content of the site
       section.content
-        div.single_project
-          div.single_project_title(style="margin-bottom:14px;")
-            h3(style="display:inline; padding-right:7px; font-size: 1.4814814815vh;") Project:
-            h2(style="display:inline; font-size: 1.8518518519vh;") #{project.title}
-
-          div(style="margin-bottom: 18px;").single_project_snippet 
-      
-            if(project.snippet)
-              p #{project.snippet}
-
-            if(project.github)
-              div.single_project_github
-                a(href=project.github) View on Github
-              
-          div(style="font-size: 1.6vh;line-height: 2;")
-            h3 Tools Used
-
-          div(style="margin-bottom: 14px;")
-            each tool,index in project.tools
-              a(style="text-decoration: none;" href="/tools/" + tool.slug) #{tool.title}
-              if(index < project.tools.length - 1)
-                span(style=" margin-right:4px;") 
-                  =", " 
-
-          div(style="text-align: center;")
-            a(style="text-decoration: none;" href="/projects") View all projects
+        include templates/project/single.pug
 
     include templates/main/footer.pug

@@ -1,0 +1,26 @@
+div.single_project
+  div.single_project_title(style="margin-bottom:14px;")
+    h3(style="display:inline; padding-right:7px; font-size: 1.4814814815vh;") Project:
+    h2(style="display:inline; font-size: 1.8518518519vh;") #{project.title}
+
+  div(style="margin-bottom: 18px;").single_project_snippet
+
+    if(project.snippet)
+      p #{project.snippet}
+
+    if(project.github)
+      div.single_project_github
+        a(href=project.github) View on Github
+      
+  div(style="font-size: 1.6vh;line-height: 2;")
+    h3 Tools Used
+
+  div(style="margin-bottom: 14px;")
+    each tool,index in project.tools
+      a(style="text-decoration: none;" href="/tools/" + tool.slug) #{tool.title}
+      if(index < project.tools.length - 1)
+        span(style=" margin-right:4px;") 
+          =", " 
+
+  div(style="text-align: center;")
+    a(style="text-decoration: none;" href="/projects") View all projects
