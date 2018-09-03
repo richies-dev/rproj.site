@@ -3,4 +3,8 @@
 - Split templates
 - Clean nodejs logic
 - Remove inline styling
-- Add and render .md files from github
+- Add content to projects
+  - Videos
+  - Images
+  - Thumbnails
+  - .md files from github

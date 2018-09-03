@@ -9,15 +9,11 @@ const options       = require(__dirname + "/assets/json/options.json",  'utf8');
 const projectsJson  = require(__dirname + "/assets/json/projects.json", 'utf8');
 const toolsJson     = require(__dirname + "/assets/json/tools.json",    'utf8');
 
-
-
-
 projectsJson.forEach(project => {
       
   project.tools = [];
 
 });
-
 
 var allTools = [];
 var normalTools = [];
@@ -49,14 +45,11 @@ toolsJson.forEach(tool => {
 
 });
 
-
 allTools = featuredTools.concat(normalTools);
 
 allTools.sort     ((a, b) => a.order - b.order);
 normalTools.sort  ((a, b) => a.order - b.order);
 featuredTools.sort((a, b) => a.order - b.order);
-
-
 
 const server = http.createServer((req, res) => {
 
@@ -76,10 +69,44 @@ const server = http.createServer((req, res) => {
 
   // Create page for every project (example.com/projects/slug and example.com/projects/slug/)
   projectsJson.forEach(project => {
-
     
-    if (req.url === ("/projects/" + project.slug) || 
-        req.url === ("/projects/" + project.slug) + "/"){
+    const projectUrl = {
+      "path": ("/projects/" + project.slug),
+      "imagePath" : ("/projects/" + project.slug) + "/images/"
+    }
+
+    if(project.banners){
+      project.banners.forEach(projectBanner =>{        
+        // ex url: www/projects/lightshow/images/banner-225x150
+        //         www/projects/lightshow/images/banner-225x150/
+
+        const bannerUrl = {
+          "url" : (projectUrl.imagePath + projectBanner.slug), 
+          "path": (__dirname + "/assets/projects/" + project.slug + "/images/" + projectBanner.path)
+        };
+
+        if (req.url === (bannerUrl.url) || 
+            req.url === (bannerUrl.url) + "/"){
+
+          fs.readFile(bannerUrl.path, function(err, data) {
+            if(err){
+              res.writeHead(404);
+              res.write("Not Found!");
+            }
+            else{
+              res.writeHead(200, {'Content-Type': projectBanner.mime});
+              res.write(data);
+            }
+            res.end();
+          });     
+        }
+    
+  
+      });
+    }
+    
+    if (req.url === (projectUrl.path) || 
+        req.url === (projectUrl.path) + "/"){
 
       res.statusCode = 200;
       res.setHeader("Content-Type", "text/html");
@@ -91,6 +118,7 @@ const server = http.createServer((req, res) => {
       
       res.end(compiledPug);          
     }
+
   });
   
 
