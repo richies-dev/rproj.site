@@ -19,13 +19,13 @@
       "Omnidirectional shadow mapping",
       "Particle systems with instanced rendering"
     ],
-    "banners":[
+    "images":[
       {
         "comment": "relative to /assets/projects/$slug/images - ex url: /projects/lightshow/images/banner-225x150",
         "slug": "banner-225x150",
         "path": "banner-225x150.png",
         "mime": "image/png",
-        "icon": true
+        "category": "icon"
       }
     ]
   },
@@ -34,21 +34,24 @@
     "slug": "stardive",
     "snippet": "StarDive is a game created with Unity3D and is published on Google Play, Amazon, and the Apple App store. StarDive is my second published project.",
     "featured": true,
-    "banners":[
+    "images":[
       {
         "slug": "banner-225x150",
         "path": "banner-225x150.png",
-        "mime": "image/png"
+        "mime": "image/png",
+        "category": "none"
       },
       {
         "slug": "banner-300x200",
         "path": "banner-300x200.gif",
-        "mime": "image/gif"
+        "mime": "image/gif",
+        "category": "none"
       },
       {
         "slug": "banner-1021x227",
         "path": "banner-1021x227.png",
-        "mime": "image/png"
+        "mime": "image/png",
+        "category": "none"
       }
     ]
   },
@@ -57,11 +60,12 @@
     "slug": "aeroflight",
     "snippet": "Aeroflight is a game created with Unity3D and is published on Google Play, Amazon, and the Apple App store. Aeroflight is my first published project.",
     "featured": true,
-    "banners":[
+    "images":[
       {
         "slug": "banner-1021x227",
         "path": "banner-1021x227.png",
-        "mime": "image/png"
+        "mime": "image/png",
+        "category": "none"
       }
     ]
   },
@@ -70,17 +74,18 @@
     "slug": "adventuresofloloexcl",
     "snippet": "Adventures of Lolo! was made in one month for the NES Box art game jam in 2015. It is my third game and my first participation in a game jam. The game is based off of the North American cover Art for the NES title, \"Adventures of Lolo\". ",
     "featured": true,
-    "banners":[
+    "images":[
       {
         "slug": "banner-1021x227",
         "path": "banner-1021x227.png",
-        "mime": "image/png"
+        "mime": "image/png",
+        "category": "none"
       },
       {
         "slug": "banner-225x150",
         "path": "banner-225x150.png",
         "mime": "image/png",
-        "icon": true
+        "category": "icon"
       }
     ]
   },
@@ -89,12 +94,12 @@
     "snippet": "DrumChannel is a website created for the drumming and music community. DrumChannel (in 2018) was built with the collaborated effort of me and the DC team.",
     "slug": "drumchannel",
     "featured": true,
-    "banners":[
+    "images":[
       {
         "slug": "banner-225x150",
         "path": "banner-225x150.png",
         "mime": "image/png",
-        "icon": true
+        "category": "icon"
       }
     ]
   },
@@ -123,12 +128,12 @@
     "slug": "richsikra",
     "snippet": "richsikra is a simple wordpress website.",
     "featured": false,
-    "banners":[
+    "images":[
       {
         "slug": "banner-300x200",
         "path": "banner-300x200.png",
         "mime": "image/png",
-        "icon": true
+        "category": "icon"
       }
     ]
   },

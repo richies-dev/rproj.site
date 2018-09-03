@@ -26,15 +26,18 @@ html
         
         article(style="position:relative;")
           
-          - var hasIcon = false
-          
-          each banner in project.banners
-            if banner.icon == true
-              div(style="position: absolute;bottom: -100%;height: 12vh;width: 12vh;overflow:hidden;")
-                // To center add: margin-left: -50%;
-                img(src=("/projects/" + project.slug + "/images/" + banner.slug) style="height: 100%;")
-                - hasIcon = true
-                break
+
+
+          if project.images
+            - var hasIcon = false
+            
+            each image in project.images
+              if image.category === "icon"
+                div(style="position: absolute;bottom: -100%;height: 12vh;width: 12vh;overflow:hidden;")
+                  // To center add: margin-left: -50%;
+                  img(src=("/projects/" + project.slug + "/images/" + image.slug) style="height: 100%;")
+                  - hasIcon = true
+                  break
 
           div(style = (hasIcon ? "margin-left:14vh;" : ""))
         
