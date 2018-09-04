@@ -1,0 +1,17 @@
+[
+  {
+    "mime":"text/css",
+    "path":"/style.css",
+    "slug":"style"
+  },
+  {
+    "mime":"application/javascript",
+    "path":"/script.js",
+    "slug":"script"
+  },
+  {
+    "mime":"image/svg+xml",
+    "path":"/assets/images/bg.svg",
+    "slug":"bg"
+  }
+]

@@ -31,7 +31,7 @@ html
         div.project_list
           div.project_list_title Projects
           each project,index in projects
-            a.project_list_item(href="/projects/" + project.slug) #{project.title}
+            a.project_list_item(href="/project/" + project.slug) #{project.title}
             if (index < projects.length - 1 && ((index + 1) % 2) === 0)
               br
             else if(index < projects.length - 1)

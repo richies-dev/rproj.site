@@ -12,7 +12,7 @@ div.single_tool
 
   div(style="margin-bottom: 12px;")
     each project,index in tool.projects
-      a(style="text-decoration: none;" href="/projects/" + project.slug) #{project.title}
+      a(style="text-decoration: none;" href="/project/" + project.slug) #{project.title}
       if(index < tool.projects.length - 1)
         span(style=" margin-right:4px;") 
           =", " 

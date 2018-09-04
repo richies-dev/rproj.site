@@ -17,7 +17,7 @@ div.single_project
 
   div(style="margin-bottom: 14px;")
     each tool,index in project.tools
-      a(style="text-decoration: none;" href="/tools/" + tool.slug) #{tool.title}
+      a(style="text-decoration: none;" href="/tool/" + tool.slug) #{tool.title}
       if(index < project.tools.length - 1)
         span(style=" margin-right:4px;") 
           =", " 

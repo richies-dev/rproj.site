@@ -22,9 +22,9 @@
     "images":[
       {
         "comment": "relative to /assets/projects/$slug/images - ex url: /projects/lightshow/images/banner-225x150",
-        "slug": "banner-225x150",
-        "path": "banner-225x150.png",
         "mime": "image/png",
+        "path": "banner-225x150.png",
+        "slug": "banner-225x150",
         "category": "icon"
       }
     ]
