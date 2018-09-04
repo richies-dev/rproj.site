@@ -1,11 +1,38 @@
-- Create single project/tool 
+- Create single project/tool
+
 - Create single-small project/tool
+
 - Split templates
-- Clean nodejs logic
+
 - Remove inline styling
+
 - Add content to projects
   - Videos
   - Images
   - Thumbnails
   - .md files from github
 
+- Clean nodejs logic
+
+  [Process 1] Supply Data: Projects, Tools, Assets
+    [s1]
+      [a] - Dependency check supplied data, force structure of data
+
+  [Process 2] Process Data -> Restructure data to be used for URL writing and .pug templates
+    [s1]
+      [a] - Set tools array for each project: project[i] > tools 
+      [b] - Set projects array for each tool: tool   [i] > projects
+      [c] - For each image in the project[i].images array, append a new "Asset" to the assets array
+    [s2] - Outputed Data Structure
+      [a] - Project
+      [b] - Tool
+      [c] - Asset
+
+  [Process 3] Create responses for requests with different urls
+    [s1] - Retrieve data about current URL
+      [a] - Calculate page
+      [b] - Read and store request variables if applicable
+    [s2] - Render templates based on current URL 
+      [a] - Supply processed data to templates
+      [b] - Try to render templates with data according to the calculated URL information
+      [c] - Render response (catch and display errors)
