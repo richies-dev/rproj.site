@@ -15,13 +15,14 @@ const pug = require('pug');
 
 class DataResponder {
 
-  constructor(req, res, processedData) {
+  constructor(req, res, processedData, errorHandler) {
 
     this.req            = req;
     this.res            = res;
     this.processedData  = processedData;
-    //this._endResp(mainDirectoryPath);
-    //;
+    this.errorHandler   = errorHandler;
+
+    this._writeErrors();
     this._writeIndex();
     this._writeProjects();
     this._writeTools();
@@ -48,7 +49,15 @@ class DataResponder {
     return (this.req.url === "/" || this.req.url === "");
   }
 
-
+  _writeErrors(){
+    
+    if (this._isUrl("errors")) {
+      if(!this.errorHandler.isEmpty()){
+        this._endResp(JSON.stringify(this.errorHandler.messages, null, 2));
+        return;
+      }  
+    }
+  }
 
   _writeIndex() {
     // Index pages

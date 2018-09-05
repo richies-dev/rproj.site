@@ -13,7 +13,7 @@ Process Data -> Restructure validated data to be used for URL writing and .pug t
 */
 class DataProcessor {
 
-  constructor(data) {
+  constructor(data, errorHandler) {
 
     this.allTools       = [];
     this.normalTools    = [];
@@ -98,7 +98,7 @@ class DataProcessor {
 
   }
 
-  getData() {
+  get processedData() {
     return {
       options:        this.options,
       tools:          this.allTools,
