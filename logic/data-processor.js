@@ -1,3 +1,16 @@
+/*
+Process Data -> Restructure validated data to be used for URL writing and .pug templates
+
+[s1]
+  [a] - Set tools array for each project: project[i] > tools 
+  [b] - Set projects array for each tool: tool   [i] > projects
+  [c] - For each image in the project[i].images array, append a new "Asset" to the assets array
+[s2] - Outputed Data Structure
+  [a] - Project
+  [b] - Tool
+  [c] - Asset
+
+*/
 class DataProcessor {
 
   constructor(data) {
@@ -30,7 +43,6 @@ class DataProcessor {
   // find the matching project in the user defined projects array, 
   // and then replace the slug with that project object.
   _bindToolsAndProjects() {
-
     var self = this;
     self.toolsJson.forEach((tool) => {
 
@@ -39,6 +51,7 @@ class DataProcessor {
         self.projectsJson.forEach(project => {
 
           if (project.slug === projectSlug) {
+
             if (!project.tools) {
               project.tools = [tool];
             }
@@ -46,6 +59,7 @@ class DataProcessor {
               project.tools.push(tool);
             }
 
+            //replace tool->projects[i] to be project object, not slug
             tool.projects[index] = project;
           }
 

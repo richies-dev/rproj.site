@@ -1,14 +1,27 @@
-const pug = require('pug');
-const fs = require('fs');
+/*
+Create responses for requests with different urls based on validated then processed data
 
-class UrlWriter {
+[s1] - Retrieve data about current URL
+  [a] - Calculate page
+  [b] - Read and store request variables if applicable
+[s2] - Render templates based on current URL 
+  [a] - Supply processed data to templates
+  [b] - Try to render templates with data according to the calculated URL information
+  [c] - Render response (catch and display errors)
+
+*/
+const fs = require('fs');
+const pug = require('pug');
+
+class DataResponder {
 
   constructor(req, res, processedData) {
 
     this.req            = req;
     this.res            = res;
     this.processedData  = processedData;
-
+    //this._endResp(mainDirectoryPath);
+    //;
     this._writeIndex();
     this._writeProjects();
     this._writeTools();
@@ -42,7 +55,7 @@ class UrlWriter {
     if (this._isIndex()) {
       this.res.statusCode = 200;
       this.res.setHeader("Content-Type", "text/html");
-      this._endResp(pug.renderFile(__dirname + "/index.pug", this.processedData));
+      this._endResp(pug.renderFile(baseDirectoryPath + "/index.pug", this.processedData));
     }
   }
 
@@ -54,7 +67,7 @@ class UrlWriter {
         self.res.statusCode = 200;
         self.res.setHeader("Content-Type", "text/html");
         self.processedData[slug] = e;
-        self._endResp(pug.renderFile(__dirname + pugFilePath, self.processedData));
+        self._endResp(pug.renderFile(baseDirectoryPath + pugFilePath, self.processedData));
       }
     });
   }
@@ -73,7 +86,7 @@ class UrlWriter {
     if (this._isUrl("projects")) {
       this.res.statusCode = 200;
       this.res.setHeader("Content-Type", "text/html");
-      this._endResp(pug.renderFile(__dirname + "/projects.pug", this.processedData));
+      this._endResp(pug.renderFile(baseDirectoryPath + "/projects.pug", this.processedData));
     }
   }
 
@@ -82,7 +95,7 @@ class UrlWriter {
     if (this._isUrl("tools")) {
       this.res.statusCode = 200;
       this.res.setHeader("Content-Type", "text/html");
-      this._endResp(pug.renderFile(__dirname + "/tools.pug", this.processedData));
+      this._endResp(pug.renderFile(baseDirectoryPath + "/tools.pug", this.processedData));
     }
   }
 
@@ -91,7 +104,7 @@ class UrlWriter {
     this.processedData.assets.forEach(asset => {
 
       if (self._isUrl(asset.slug)) {
-        fs.readFile(__dirname + asset.path, function (err, data) {
+        fs.readFile(baseDirectoryPath + asset.path, function (err, data) {
 
           if (err) {
             self._simpleResp({
@@ -114,4 +127,4 @@ class UrlWriter {
     });
   }
 }
-exports.UrlWriter = UrlWriter;
+exports.DataResponder = DataResponder;

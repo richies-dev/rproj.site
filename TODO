@@ -14,7 +14,7 @@
 
 - Clean nodejs logic
 
-  [Process 1] Supply Data: Projects, Tools, Assets
+  [Process 1] Supply and Validate Data: Projects, Tools, Assets
     [s1]
       [a] - Dependency check supplied data, force structure of data
 
