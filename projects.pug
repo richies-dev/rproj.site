@@ -28,13 +28,12 @@ html
         
       //The main content of the site
       section.content
-        div.project_list
-          div.project_list_title Projects
+        article.project_list
+          h3.project_list_title Projects
           each project,index in projects
             a.project_list_item(href="/project/" + project.slug) #{project.title}
             if (index < projects.length - 1 && ((index + 1) % 2) === 0)
               br
             else if(index < projects.length - 1)
-              span(style="margin-right:4px;")  
-                ="-"
+              span="-"
     include templates/main/footer.pug

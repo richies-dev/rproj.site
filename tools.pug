@@ -29,13 +29,12 @@ html
         
       //The main content of the site
       section.content
-        div.tool_list
-          div.tool_list_title Tools
+        article.tool_list
+          h3.tool_list_title Tools
           each tool,index in tools
             a.tool_list_item(href="/tool/" + tool.slug) #{tool.title}
             if (index < tools.length - 1 && ((index + 1) % 3) === 0)
               br
             else if(index < tools.length - 1)
-              span(style="margin-right:4px;")  
-                ="-"
+              span="-"
     include templates/main/footer.pug

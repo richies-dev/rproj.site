@@ -216,8 +216,26 @@ body {
 .projects_header {
   text-align: center;
 }
+.projects_header h1{
+  display:block;
+  padding-bottom:32px;
+  font-size:2.2222222222vh;
+  line-height:1;
+}
 .projects_header h2 {
   font-size: 3.7037037037vh;
+}
+.projects_info{
+  margin-top: 4.1666666667vh;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 71px -27px rgba(144, 144, 144, 0.5);
+  padding:3.4259259259vh;
+}
+.projects_info p{
+  line-height:1.6;
+  font-size: 1.4814814815vh;
+  line-height: 2.7777777778vh;
 }
 .projects_load_more_button {
   font-size: 1.8518518519vh;
@@ -458,7 +476,116 @@ body {
   font-size: 1.4814814815vh;
 }
 
+.tool_list_item span, .project_list_item span{
+  margin-right:4px;
+}
+
 .tool_list_title, .project_list_title{
   margin-bottom: 2vh;
   font-size: 1.8518518519vh;
+}
+
+.top_project{
+  position:relative;
+}
+
+.top_project_icon{
+  position: absolute;bottom: -100%;height: 12vh;width: 12vh;overflow:hidden;
+}
+
+/* To center add: margin-left: -50%; */
+.top_project_icon img{
+  height: 100%;
+}
+
+.top_project.top_project-icon .top_project_title{
+  margin-left:14vh;
+}
+
+.top_project_title h1{
+  margin-top:27vh;font-size:2.2222222222vh;
+}
+
+.top_project_title h3{
+  margin-top:1vh;font-size:1.4814814815vh;
+}
+
+
+.single_project_title{
+  margin-bottom:14px;
+}
+.single_project_title h3{
+  display:inline; padding-right:7px; font-size: 1.4814814815vh;
+}
+.single_project_title h2{
+  display:inline; font-size: 1.8518518519vh;
+}
+.single_project_snippet{
+  margin-bottom: 18px;
+}
+
+.single_project_tools_header{
+  font-size: 1.6vh;line-height: 2;
+}
+
+.single_project_tools{
+  margin-bottom: 14px;
+}
+.single_project_tools a{
+  text-decoration: none;
+}
+.single_project_tools span{
+  margin-right:4px;
+}
+
+.single_project_view_all{
+  text-align: center;
+}
+.single_project_view_all a{
+  text-decoration: none;
+}
+
+
+.single_tool_title{
+  margin-bottom:14px;
+}
+.single_tool_title h3{
+  display:inline; padding-right:7px; font-size: 1.4814814815vh;
+}
+.single_tool_title h2{
+  display:inline; font-size: 1.8518518519vh;
+}
+.single_tool_use{
+  margin-bottom: 18px;
+}
+
+.single_tool_projects_header{
+  font-size: 1.6vh;line-height: 2;
+}
+.single_tool_projects_list{
+  margin-bottom: 12px;
+}
+.single_tool_projects_list a{
+  text-decoration: none;
+}
+.single_tool_projects_list span{
+  margin-right:4px;
+}
+.single_tool_references{
+  margin-bottom: 18px;
+}
+.single_tool_references a{
+  text-decoration: none;
+}
+.single_tool_references span{
+  margin-right:4px;
+}
+.single_tool_references_title{
+  font-size: 1.6vh;line-height: 2;
+}
+.single_tool_view_all{
+  text-align:center;
+}
+.single_tool_view_all a{
+  text-decoration: none;
 }

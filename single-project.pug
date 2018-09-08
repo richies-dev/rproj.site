@@ -21,30 +21,28 @@ html
               a(href="/") Richie Sikra
             ul.navbar  
               each item in options.navbar
-                li.navbar_item 
-                  a(href=item.url) #{item.title}
+                li.navbar_item
+                  a(href=item.url)=item.title
         
-        article(style="position:relative;")
-          
-
-
-          if project.images
-            - var hasIcon = false
-            
-            each image in project.images
-              if image.category === "icon"
-                div(style="position: absolute;bottom: -100%;height: 12vh;width: 12vh;overflow:hidden;")
-                  // To center add: margin-left: -50%;
-                  img(src=("/project/" + project.slug + "/images/" + image.slug) style="height: 100%;" alt=image.alt)
-                  - hasIcon = true
-                  break
-
-          div(style = (hasIcon ? "margin-left:14vh;" : ""))
+        //TODO: Move logic into processor
         
-            h1.project_header(style="margin-top:27vh;font-size:2.2222222222vh;")
-              =project.title
-              
-            h3.project_header_tools(style="margin-top:1vh;font-size:1.4814814815vh;")
+        - var icon = false
+        if project.images
+          each image in project.images
+            if image.category === "icon"
+              - icon = image
+              - break
+
+        section(class = (icon == false) ? "top_project" : "top_project top_project-icon")
+
+          if icon != false
+            div.top_project_icon
+              img(src=("/project/" + project.slug + "/images/" + icon.slug) alt=icon.alt)
+
+          header.top_project_title
+            h1=project.title
+            h3
+              //TODO: Move logic into processor
               each tool,index in project.tools
                 if (index < 3 && index + 1 < project.tools.length)
                   = tool.title + ", "
@@ -53,8 +51,6 @@ html
                   - break
                 else
                   = tool.title + "."
-
-
         
       //The main content of the site
       section.content

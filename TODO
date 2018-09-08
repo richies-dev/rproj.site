@@ -36,3 +36,5 @@
       [a] - Supply processed data to templates
       [b] - Try to render templates with data according to the calculated URL information
       [c] - Render response (catch and display errors)
+
+- Clean tools.pug and projects.pug

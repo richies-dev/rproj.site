@@ -1,30 +1,27 @@
-div.single_tool
+article.single_tool
 
-  div.single_tool_title(style="margin-bottom:14px;")
-    h3(style="display:inline; padding-right:7px; font-size: 1.4814814815vh;") Tool:
-    h2(style="display:inline; font-size: 1.8518518519vh;") #{tool.title}
+  header.single_tool_title
+    h3 Tool:
+    h2=tool.title
 
-  div(style="margin-bottom: 18px;")
-    if(tool.use)
-      div.single_tool_snippet #{tool.use}
-      
-  h3(style="font-size: 1.6vh;line-height: 2;") Used In
+  if(tool.use)
+    p.single_tool_use=tool.use
+    
+  h3.single_tool_projects_header Used In
 
-  div(style="margin-bottom: 12px;")
+  section.single_tool_projects_list
     each project,index in tool.projects
-      a(style="text-decoration: none;" href="/project/" + project.slug) #{project.title}
+      a(href="/project/" + project.slug)=project.title
       if(index < tool.projects.length - 1)
-        span(style=" margin-right:4px;") 
-          =", " 
+        span=", " 
 
   if(tool.references)
-    div(style="margin-bottom: 18px;").single_tool_references
-      h3(style="font-size: 1.6vh;line-height: 2;") References 
+    section.single_tool_references
+      h3.single_tool_references_title References
       each reference,index in tool.references
-        a(style="text-decoration: none;" href=reference.url) #{reference.title}
+        a(href=reference.url)=reference.title
         if(index < tool.references.length - 1)
-          span(style=" margin-right:4px;") 
-            =", " 
+          span=", "
 
-  div(style="text-align:center;")
-    a(style="text-decoration: none;" href="/tools") View all tools
+  section.single_tool_view_all
+    a(href="/tools") View all tools

@@ -22,7 +22,7 @@ html
             ul.navbar  
               each item in options.navbar
                 li.navbar_item 
-                  a(href=item.url) #{item.title}
+                  a(href=item.url)=item.title
 
       //Quick summary
       section.top_content

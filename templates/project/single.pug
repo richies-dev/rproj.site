@@ -1,29 +1,28 @@
-div.single_project
-  div.single_project_title(style="margin-bottom:14px;")
-    h3(style="display:inline; padding-right:7px; font-size: 1.4814814815vh;") Project:
-    h2(style="display:inline; font-size: 1.8518518519vh;") #{project.title}
+article.single_project
 
-  div(style="margin-bottom: 18px;").single_project_snippet
+  header.single_project_title
+    h3 Project:
+    h2=project.title
+
+  section.single_project_snippet
 
     if(project.snippet)
-      p #{project.snippet}
+      p=project.snippet
 
     if(project.github)
       div.single_project_github
         a(href=project.github) View on Github
       
-  div(style="font-size: 1.6vh;line-height: 2;")
-    h3 Tools Used
-
-  div(style="margin-bottom: 14px;")
+  section.single_project_tools
+    h3.single_project_tools_header Tools Used
     each tool,index in project.tools
-      a(style="text-decoration: none;" href="/tool/" + tool.slug) #{tool.title}
+      a(href="/tool/" + tool.slug)=tool.title
       if(index < project.tools.length - 1)
-        span(style=" margin-right:4px;") 
-          =", " 
+        span
+          =", "
 
-  div(style="text-align: center;")
-    a(style="text-decoration: none;" href="/projects") View all projects
+  section.single_project_view_all
+    a(href="/projects") View all projects
 
   //to display all images
   //each image in project.images
