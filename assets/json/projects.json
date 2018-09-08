@@ -22,6 +22,7 @@
     "images":[
       {
         "comment": "relative to /assets/projects/$slug/images - ex url: /projects/lightshow/images/banner-225x150",
+        "alt" : "lightshow banner image",
         "mime": "image/png",
         "path": "banner-225x150.png",
         "slug": "banner-225x150",
@@ -36,18 +37,21 @@
     "featured": true,
     "images":[
       {
+        "alt" : "stardive small banner image",
         "slug": "banner-225x150",
         "path": "banner-225x150.png",
         "mime": "image/png",
         "category": "none"
       },
       {
+        "alt" : "stardive medium animated banner image",
         "slug": "banner-300x200",
         "path": "banner-300x200.gif",
         "mime": "image/gif",
         "category": "none"
       },
       {
+        "alt" : "stardive large banner image",
         "slug": "banner-1021x227",
         "path": "banner-1021x227.png",
         "mime": "image/png",
@@ -62,6 +66,7 @@
     "featured": true,
     "images":[
       {
+        "alt" : "aeroflight small banner image",
         "slug": "banner-1021x227",
         "path": "banner-1021x227.png",
         "mime": "image/png",
@@ -76,12 +81,14 @@
     "featured": true,
     "images":[
       {
+        "alt" : "adventures of lolo! banner image",
         "slug": "banner-1021x227",
         "path": "banner-1021x227.png",
         "mime": "image/png",
         "category": "none"
       },
       {
+        "alt" : "adventures of lolo! small banner image",
         "slug": "banner-225x150",
         "path": "banner-225x150.png",
         "mime": "image/png",
@@ -96,6 +103,7 @@
     "featured": true,
     "images":[
       {
+        "alt" :"drumchannel.com (in 2018) banner image",
         "slug": "banner-225x150",
         "path": "banner-225x150.png",
         "mime": "image/png",
@@ -130,6 +138,7 @@
     "featured": false,
     "images":[
       {
+        "alt" :"richsikra.com banner image",
         "slug": "banner-300x200",
         "path": "banner-300x200.png",
         "mime": "image/png",

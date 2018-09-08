@@ -10,8 +10,9 @@ const { DataProcessor } = require('./logic/data-processor');
 const { DataResponder } = require('./logic/data-responder');
 const { DataValidator } = require('./logic/data-validator');
 
+var options =  require(__dirname + "/assets/json/options.json",  'utf8');
+
 var data = {
-  options:  require(__dirname + "/assets/json/options.json",  'utf8'),
   projects: require(__dirname + "/assets/json/projects.json", 'utf8'),
   tools:    require(__dirname + "/assets/json/tools.json",    'utf8'),
   assets:   require(__dirname + "/assets/json/assets.json",   'utf8')
@@ -23,10 +24,9 @@ const dataProcessor     = new DataProcessor(dataValidator.validatedData, errorHa
 
 const server = http.createServer((req, res) => {
   
-  new DataResponder(req, res, dataProcessor.processedData, errorHandler);
+  new DataResponder(req, res, dataProcessor.processedData, options, errorHandler);
 
 });
-
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);

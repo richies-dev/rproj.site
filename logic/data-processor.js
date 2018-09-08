@@ -18,7 +18,6 @@ class DataProcessor {
     this.allTools       = [];
     this.normalTools    = [];
     this.featuredTools  = [];
-    this.options        = data.options;
     this.toolsJson      = data.tools;
     this.projectsJson   = data.projects;
     this.assetsJson     = data.assets;
@@ -79,19 +78,17 @@ class DataProcessor {
 
   // Add all project images to the assets array
   _addToAssets() {
-
     var self = this;
     // this.assetsJson
     this.projectsJson.forEach(project => {
       if (project.images) {
         project.images.forEach(image => {
-
           self.assetsJson.push({
+            "alt" : image.alt,
             "mime": image.mime,
             "path": "/assets/projects/" + project.slug  + "/images/" + image.path,
             "slug": (("project/"        + project.slug) + "/images/" + image.slug)
           });
-
         });
       }
     });
@@ -100,7 +97,6 @@ class DataProcessor {
 
   get processedData() {
     return {
-      options:        this.options,
       tools:          this.allTools,
       projects:       this.projectsJson,
       featuredTools:  this.featuredTools,

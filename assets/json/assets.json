@@ -1,15 +1,18 @@
 [
   {
+    "alt": "The style being used on devrichie.com",
     "mime":"text/css",
     "path":"/style.css",
     "slug":"style"
   },
   {
+    "alt" :"The script being used on devrichie.com",
     "mime":"application/javascript",
     "path":"/script.js",
     "slug":"script"
   },
   {
+    "alt" :"The background being used on devrichie.com",
     "mime":"image/svg+xml",
     "path":"/assets/images/bg.svg",
     "slug":"bg"

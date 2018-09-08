@@ -8,19 +8,22 @@ Create responses for requests with different urls based on validated then proces
   [a] - Supply processed data to templates
   [b] - Try to render templates with data according to the calculated URL information
   [c] - Render response (catch and display errors)
-
 */
+
 const fs = require('fs');
 const pug = require('pug');
 
 class DataResponder {
 
-  constructor(req, res, processedData, errorHandler) {
+  constructor(req, res, processedData, options, errorHandler) {
 
     this.req            = req;
     this.res            = res;
     this.processedData  = processedData;
     this.errorHandler   = errorHandler;
+    
+    //Add options to the data object so it can be used in .pug templates
+    this.processedData['options'] = options;
 
     this._writeErrors();
     this._writeIndex();
