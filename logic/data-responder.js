@@ -25,6 +25,7 @@ class DataResponder {
     //Add options to the data object so it can be used in .pug templates
     this.processedData['options'] = options;
 
+    this._redirectOldUrls();
     this._writeErrors();
     this._writeIndex();
     this._writeProjects();
@@ -32,6 +33,32 @@ class DataResponder {
     this._writeToolListUrl();
     this._writeProjectListUrl();
     this._writeAssetUrls();
+  }
+
+  //TODO: Remove/clean
+  //For SEO purposes
+  _redirectOldUrls(){
+    // /ProjectPages/LoloGamePage.php     -> 301 perm /project/adventuresofloloexcl
+    // /ProjectPages/StarDiveGamePage.php -> 301 perm /project/stardive
+    
+    if(this._isUrl("ProjectPages/LoloGamePage.php")){
+
+      this.res.statusCode = 301;
+      this.res.setHeader("Content-Type",  "text/html");
+      this.res.setHeader("Location",      "/project/adventuresofloloexcl");
+
+      this.res.end();
+
+    }
+    else if(this._isUrl("ProjectPages/StarDiveGamePage.php")){
+      
+      this.res.statusCode = 301;
+      this.res.setHeader("Content-Type",  "text/html");
+      this.res.setHeader("Location",      "/project/stardive");
+
+      this.res.end();
+    }
+
   }
   
   _endResp(data) {
