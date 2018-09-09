@@ -39,7 +39,7 @@ class DataResponder {
   //For SEO purposes
   _redirectOldUrls(){
     // /ProjectPages/LoloGamePage.php     -> 301 perm /project/adventuresofloloexcl
-    // /ProjectPages/StarDiveGamePage.php -> 301 perm /project/stardive
+    // /ProjectPages/StarDivePage.php -> 301 perm /project/stardive
     
     if(this._isUrl("ProjectPages/LoloGamePage.php")){
 
@@ -50,7 +50,7 @@ class DataResponder {
       this.res.end();
 
     }
-    else if(this._isUrl("ProjectPages/StarDiveGamePage.php")){
+    else if(this._isUrl("ProjectPages/StarDivePage.php")){
       
       this.res.statusCode = 301;
       this.res.setHeader("Content-Type",  "text/html");
