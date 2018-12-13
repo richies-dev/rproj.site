@@ -1,10 +1,10 @@
-- Create single project/tool
+- Util single-small project/tool
 
-- Create single-small project/tool
+- Remove marketing content (This site isn't meant for that!)
 
-- Split templates
+- Add minimal style
 
-- Remove inline styling
+- Run website checkers, update and fix existing html to follow semantics and proper formatting
 
 - Add content to projects
   - Videos
