@@ -1,9 +1,8 @@
 //The navbar of the website
-nav
-  header
-    section.site_title
-      h4 devrichie.com
-    ul.navbar  
+header
+  h4 devrichie.com
+  nav
+    ul.navbar
       each item in options.navbar
         li.navbar_item
           a(href=item.url) #{item.title}

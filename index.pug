@@ -1,47 +1,44 @@
 doctype html
 html
   include templates/main/head.pug
+
   body
+    include templates/main/navbar.pug
 
     //For all of the main content
-    section.main
-
-      //The highest point of the page which content can be rendered on - used for the navbar
-      section.top
-        include templates/main/navbar.pug
+    main
       //Quick summary
-      header.top_content
-        section.top_content_header.top_content_header 
-          h1 Developer Richie 
-          p devrichie is a site built as an access point for all of my projects, and which tools I have used to create them.
-        
-      //The main content of the site
-      section.content
+      header
+        h1 Developer Richie 
+        p devrichie is a site built as an access point for all of my projects, and which tools I have used to create them.
       
-        //Skills/About
-        section.skill_container
-          article.skill_container_item.skill_container_item-1-2
-            header
-              h3 What is this?
-            p 
-              ="lengthy description of site 1-2 paragraphs"
-              br
-              a(href="https://github.com/nanu2000/") Github Icon
-              =" and "
-              a(href="https://codepen.io/nanu2000/") Codepen Icon
-              br
-              
-          article.skill_container_item.skill_container_item-1-2
-            header
-              div.project_highlights
-                h3 Highlighted Projects
-                p list highlights here
-
-              a(href="/projects/") View all projects
-              =" - or the "
-              div.skill_container_view_all_tools
-                a(href="/tools/") tools used to create them
+      //Skills/About
+      section.grid
+        article.grid_item-1-2
+          header
+            h3 What is this?
             
+          p 
+            ="lengthy description of site 1-2 paragraphs"
+
+          footer
+            a(href="https://github.com/nanu2000/") Github Icon
+            =" and "
+            a(href="https://codepen.io/nanu2000/") Codepen Icon
+            br
+            
+        article.grid_item-1-2
+          header
+            h3 Highlighted Projects
+
+          p 
+            ="list highlights here"
+
+          footer
+            a(href="/projects/") View all projects
+            =" - or the "
+            a(href="/tools/") tools used to create them
+              
       include templates/main/contact-form.pug
 
     include templates/main/footer.pug

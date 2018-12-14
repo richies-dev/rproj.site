@@ -1,18 +1,9 @@
 //The footer of the website
-section.footer
-  section.footer_inner
-    //social media icons
-    //div.icons.icons-center
-      a.icons_icon
-        img.icons_icon_image
-      a.icons_icon
-        img.icons_icon_image
-    nav
-      ul.footer_navbar
-        each item in options.navbar
-          li.footer_navbar_item 
-            a(href=item.url) #{item.title}
+footer
+  nav
+    ul.footer_navbar
+      each item in options.navbar
+        li.footer_navbar_item
+          a(href=item.url) #{item.title}
 
-    //copyright
-    article.copyright
-      p.copyright_text Copyright � 2018 Richie Sikra. All Rights Reserved.
+  p.copyright Copyright � 2018 Richie Sikra. All Rights Reserved.

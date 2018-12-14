@@ -1,27 +1,40 @@
 article.single_project
 
-  header.single_project_title
+  header
     h2=project.title
-  section.single_project_snippet
-
+      
     if(project.snippet)
-      p=project.snippet
+      p.snippet=project.snippet
 
     if(project.github)
-      div.single_project_github
+      div
         a(href=project.github) View on Github
       
-  section.single_project_tools
-    h3.single_project_tools_header Tools Used: 
+  section.project_icons
+    //TODO: Move logic into processor
+    - var icon = false
+    if project.images
+      each image in project.images
+        if image.category === "icon"
+          - icon = image
+          - break
+
+    if icon != false
+      div.project_icon
+        img(src=("/project/" + project.slug + "/images/" + icon.slug) alt=icon.alt)
+
+  section.content
+    header
+      h3 About
+
+  section
+    header
+      h3 Tools Used: 
     each tool,index in project.tools
       a(href="/tool/" + tool.slug)=tool.title
       if(index < project.tools.length - 1)
         span
           =", "
-
-  section.single_project_view_all
+          
+  footer
     a(href="/projects") View all projects
-
-  //to display all images
-  //each image in project.images
-    img(src=("/projects/" + project.slug + "/images/" + image.slug))

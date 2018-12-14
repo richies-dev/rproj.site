@@ -2,26 +2,21 @@ doctype html
 html
   include templates/main/head.pug
   body
+    include templates/main/navbar.pug
 
     //For all of the main content
-    section.main
+    main
+      article.tool_list
 
-      //The highest point of the page which content can be rendered on - used for the navbar
-      section.top
-        include templates/main/navbar.pug
-
-      //Quick summary
-      section.top_content
-        
-      //The main content of the site
-      section.content
-        article.tool_list
+        header
           h3.tool_list_title Tools
           h4.tool_list_subtitle Click on a tool for more details
-          each tool,index in tools
-            a.tool_list_item(href="/tool/" + tool.slug) #{tool.title}
-            if (index < tools.length - 1 && ((index + 1) % 3) === 0)
-              br
-            else if(index < tools.length - 1)
-              span="-"
+          
+        each tool,index in tools
+          a.tool_list_item(href="/tool/" + tool.slug) #{tool.title}
+          if (index < tools.length - 1 && ((index + 1) % 3) === 0)
+            br
+          else if(index < tools.length - 1)
+            span="-"
+
     include templates/main/footer.pug

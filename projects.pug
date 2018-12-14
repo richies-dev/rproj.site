@@ -2,26 +2,20 @@ doctype html
 html
   include templates/main/head.pug
   body
+    include templates/main/navbar.pug
 
     //For all of the main content
-    section.main
+    main
+      article.project_list
+        header
+          h3 Projects
+          h4 Click on a project for more details
 
-      //The highest point of the page which content can be rendered on - used for the navbar
-      section.top
-        include templates/main/navbar.pug
-
-      //Quick summary
-      section.top_content
-        
-      //The main content of the site
-      section.content
-        article.project_list
-          h3.project_list_title Projects
-          h4.project_list_subtitle Click on a project for more details
-          each project,index in projects
-            a.project_list_item(href="/project/" + project.slug) #{project.title}
-            if (index < projects.length - 1 && ((index + 1) % 2) === 0)
-              br
-            else if(index < projects.length - 1)
-              span="-"
+        each project,index in projects
+          a(href="/project/" + project.slug) #{project.title}
+          if (index < projects.length - 1 && ((index + 1) % 2) === 0)
+            br
+          else if(index < projects.length - 1)
+            span="-"
+            
     include templates/main/footer.pug

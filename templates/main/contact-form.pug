@@ -1,16 +1,16 @@
 //The contact form should send an email to me and prompt a captcha
-article.contact_form
+article
 
-  header.contact_form_header
+  header
     h3 Have a question?
   form(action='#')
-    label.contact_form_label Name
-    input.contact_form_input.contact_form_input-field(placeholder='Your name' type='text' autocomplete='name')
+    label Name
+    input(placeholder='Your name' type='text' autocomplete='name')
 
-    label.contact_form_label Email Address
-    input.contact_form_input.contact_form_input-field(placeholder='Your email' type='email' autocomplete='email')
+    label Email Address
+    input(placeholder='Your email' type='email' autocomplete='email')
 
-    label.contact_form_label Message
-    textarea.contact_form_input.contact_form_input-textarea(placeholder='How can I help you?')
+    label Message
+    textarea(placeholder='How can I help you?')
 
-    input.contact_form_input.contact_form_input-submit(value='Send message' type='submit')
+    input(value='Send message' type='submit')

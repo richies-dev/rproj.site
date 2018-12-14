@@ -1,26 +1,27 @@
 article.single_tool
 
-  header.single_tool_title
+  header
     h2=tool.title
 
-  if(tool.use)
-    p.single_tool_use=tool.use
+    if(tool.use)
+      p=tool.use
     
-  h3.single_tool_projects_header Used In
-
-  section.single_tool_projects_list
+  section
+    header
+      h3 Used In
     each project,index in tool.projects
       a(href="/project/" + project.slug)=project.title
       if(index < tool.projects.length - 1)
         span=", " 
 
-  if(tool.references)
-    section.single_tool_references
-      h3.single_tool_references_title References
+  section
+    header
+      h3 References
+    if(tool.references)
       each reference,index in tool.references
         a(href=reference.url)=reference.title
         if(index < tool.references.length - 1)
           span=", "
-
-  section.single_tool_view_all
+          
+  footer
     a(href="/tools") View all tools
