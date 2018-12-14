@@ -24,6 +24,7 @@ html
       section.content
         article.project_list
           h3.project_list_title Projects
+          h4.project_list_subtitle Click on a project for more details
           each project,index in projects
             a.project_list_item(href="/project/" + project.slug) #{project.title}
             if (index < projects.length - 1 && ((index + 1) % 2) === 0)

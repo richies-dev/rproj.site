@@ -11,10 +11,8 @@ html
         include templates/main/navbar.pug
       //Quick summary
       header.top_content
-        section.top_content_header.top_content_header-main Hi, I'm Richie
-        section.top_content_header.top_content_header-sub 3D Programmer, Web & Game Developer
-        //jump to projects
-        a.top_content_button(href="/projects/") View projects
+        section.top_content_header.top_content_header-main Title
+        section.top_content_header.top_content_header-sub short description fit into a sentence.
         
       //The main content of the site
       section.content
@@ -25,85 +23,24 @@ html
             header
               h2 What is this?
             p 
-              ="The purpose of this site is to display all of the projects and tools I have used."
+              ="lengthy description of site 1-2 paragraphs"
               br
-              ="Be sure to also view my "
-              a(href="https://github.com/nanu2000/") Github
+              a(href="https://github.com/nanu2000/") Github Icon
               =" and "
-              a(href="https://codepen.io/nanu2000/") Codepen
-              =" for more!"
+              a(href="https://codepen.io/nanu2000/") Codepen Icon
               br
-              ="-Richie"
               
           article.skill_container_item.skill_container_item-1-2
             header
-              h2 Tools/Languages
-              p
-                each tool,index in featuredTools
-                  span(class="skill_container_item_tool")
-                    a(class="skill_container_item_tool_title" href="/tool/" + tool.slug)=tool.title
+              div.project_highlights
+                h2 Highlighted Projects
+                p list highlights here
 
-                      if (index < featuredTools.length - 1 && ((index + 1) % 3) !== 0)
-                        =","
-
-                    if (index < featuredTools.length - 1 && ((index + 1) % 3) === 0)
-                      br
+              a(href="/projects/") View all projects
+              =" - or the "
               div.skill_container_view_all_tools
-                a(href="/tools/") View all tools
-        //My projects
-        article.projects
-          
-          //A title
-          header.projects_header
-            h1 Under Construction
-          section.projects_info
-            p
-              | Hi,
-              br
-              | Currently my website is being re-designed. What you see now is a work in progress.
-              br
-              | -Richie (richie@devrichie.com)
-              | 8/15/2018
+                a(href="/tools/") tools used to create them
             
-            
-          //A single project
-          //article.project
-          
-            aside.project_left
-              h3.project_left_title StarDive
-              p.project_left_description 
-                ='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra porta iaculis. Aliquam erat volutpat. Quisque quis magna eu ex dictum placerat nec ac sem. Nulla et eros ut eros lobortis ultricies.'
-              section.project_left_tools_used
-                h3 Tools Used
-                p Unity 3D, Javascript, C++
-                
-            section.project_right
-              video.project_right_video(id='portfolio-item-video-player')
-                source(src='https://devrichie.com/Images/StarDiveWebBanner.mp4')
-                
-              div.button_container.button_container-center
-                a.button_container_button.button_container_button-view
-                  span View Project
-                a.button_container_button.button_container_button-watch
-                  span Watch Video
-                  i.play_icon
-                  
-          //A single small project
-          //article.project.project-small
-          
-            img.project_left_image
-              
-            section.project_right
-              h4.project_right_title Title
-              p.project_right_description
-                ='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra porta iaculis. Aliquam erat volutpat. Quisque quis magna eu ex dictum placerat nec ac sem. Nulla et eros ut eros lobortis ultricies.'
-          
-          //When clicked the load more button should load more projects below
-          //TODO: use js to load more
-          a.projects_load_more_button(href='/projects/')
-            ='View all projects'
-            
-    section.animated_background.animated_background-relative.animated_background-bottom
-      section.animated_background_inner.animated_background_inner-rotated
-        include templates/main/contact-form.pug
-        include templates/main/footer.pug
+      include templates/main/contact-form.pug
+      
+    include templates/main/footer.pug
