@@ -11,8 +11,9 @@ html
         include templates/main/navbar.pug
       //Quick summary
       header.top_content
-        section.top_content_header.top_content_header-main Title
-        section.top_content_header.top_content_header-sub short description fit into a sentence.
+        section.top_content_header.top_content_header 
+          h1 Developer Richie 
+          p devrichie is a site built as an access point for all of my projects, and which tools I have used to create them.
         
       //The main content of the site
       section.content
@@ -21,7 +22,7 @@ html
         section.skill_container
           article.skill_container_item.skill_container_item-1-2
             header
-              h2 What is this?
+              h3 What is this?
             p 
               ="lengthy description of site 1-2 paragraphs"
               br
@@ -33,7 +34,7 @@ html
           article.skill_container_item.skill_container_item-1-2
             header
               div.project_highlights
-                h2 Highlighted Projects
+                h3 Highlighted Projects
                 p list highlights here
 
               a(href="/projects/") View all projects
@@ -42,5 +43,5 @@ html
                 a(href="/tools/") tools used to create them
             
       include templates/main/contact-form.pug
-      
+
     include templates/main/footer.pug

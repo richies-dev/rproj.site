@@ -8,14 +8,7 @@ html
 
       //The highest point of the page which content can be rendered on - used for the navbar
       section.top
-        nav
-          header
-            h1.name
-              a(href="/") Richie Sikra
-            ul.navbar  
-              each item in options.navbar
-                li.navbar_item 
-                  a(href=item.url) #{item.title}
+        include templates/main/navbar.pug
 
       //Quick summary
       section.top_content

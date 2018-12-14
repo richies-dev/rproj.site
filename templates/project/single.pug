@@ -1,9 +1,7 @@
 article.single_project
 
   header.single_project_title
-    h3 Project:
     h2=project.title
-
   section.single_project_snippet
 
     if(project.snippet)
@@ -14,7 +12,7 @@ article.single_project
         a(href=project.github) View on Github
       
   section.single_project_tools
-    h3.single_project_tools_header Tools Used
+    h3.single_project_tools_header Tools Used: 
     each tool,index in project.tools
       a(href="/tool/" + tool.slug)=tool.title
       if(index < project.tools.length - 1)
