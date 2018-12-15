@@ -11,6 +11,9 @@ Process Data -> Restructure validated data to be used for URL writing and .pug t
   [c] - Asset
 
 */
+const fs = require('fs');
+const pug = require('pug');
+
 class DataProcessor {
 
   constructor(data, errorHandler) {
@@ -36,6 +39,7 @@ class DataProcessor {
     this.featuredTools.sort(sortf);
 
     this._addToAssets();
+    this._bindContentToProjects();
   }
 
   // Here, we loop through all of the slugs in the tool.projects array, 
@@ -93,6 +97,21 @@ class DataProcessor {
       }
     });
 
+  }
+
+  _bindContentToProjects(){
+    var self = this;
+    // this.assetsJson
+    this.projectsJson.forEach(project => {
+
+      var contentPath = baseDirectoryPath + "/assets/projects/" + project.slug  + "/content.pug";
+      if(fs.existsSync(contentPath)){
+        
+        var contentRendered = pug.renderFile(contentPath);
+        project.content = contentRendered;
+
+      }
+    });
   }
 
   get processedData() {
