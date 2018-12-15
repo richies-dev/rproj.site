@@ -1,0 +1,80 @@
+html {
+  background-color:#F9F9FA;
+}
+
+body {
+  font-family:Open Sans,Arial;
+  color:#444;
+  font-size:16px;
+  margin:2em auto;
+  max-width:800px;
+  padding:2em;
+  line-height:1.7;
+  text-align:justify;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+li {
+  display:inline;
+  margin:0 .5em 0 0;
+}
+
+section, article {
+  margin:2em 0;
+}
+
+h1,h2,h3,h4,h5,p {
+  margin: .2em 0;
+}
+
+h1 {
+  font-size:2em; /* 48px based on 16px default font-size */
+}
+h2 {
+  font-size:1.5em; /* 32px based on 16px default font-size */
+}
+h3 {
+  font-size:1.25em; /* 24px based on 16px default font-size */
+}
+h4 {
+  font-size:1em; /* 20px based on 16px default font-size */
+}
+h5 {
+  font-size:.75em; /* 16px based on 16px default font-size */
+}
+p {
+  font-size:1.125em; /* 18px based on 16px default font-size */
+}
+
+.navbar{
+  margin-bottom:4em;
+}
+.navbar .title, .navbar nav {
+  margin:0;
+}
+.navbar .title {
+  float:left;
+  line-height:32px;
+}
+.navbar nav {
+  float:right;
+  line-height:32px;
+}
+.navbar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer{
+  margin: 4em 0;
+}
+.footer .copyright{
+  font-size:.75em;
+}
