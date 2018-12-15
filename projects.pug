@@ -8,8 +8,8 @@ html
     main
       article.project_list
         header
-          h3 Projects
-          h4 Click on a project for more details
+          h2 Projects
+          h3 Click on a project for more details
 
         each project,index in projects
           a(href="/project/" + project.slug) #{project.title}
@@ -17,5 +17,5 @@ html
             br
           else if(index < projects.length - 1)
             span="-"
-            
+
     include templates/main/footer.pug
