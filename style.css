@@ -12,17 +12,25 @@ body {
   line-height:1.7;
   text-align:justify;
 }
+
 a {
   text-decoration: none;
+  color:#26467F;    
 }
-ul {
+a:hover {
+  color:#005cff;
+}
+a:visited {
+  color:#13233F;
+}
+ul,ol {
   list-style: none;
   padding:0;
   margin:0;
 }
 li {
   display:inline;
-  margin:0 .5em 0 0;
+  margin:0 1em 0 0;
 }
 
 section, article {
@@ -71,6 +79,12 @@ p {
   display: table;
   clear: both;
 }
+.navbar a {
+  color:#005cff;
+}
+.navbar .title a {
+  color:#002E7F;
+}
 
 .footer{
   margin: 4em 0;
@@ -79,9 +93,26 @@ p {
   font-size:.75em;
 }
 
+
 .project_list, .tool_list {
+  margin:.5em;
 }
-.project_list div, .tool_list div {
-  margin: 1em 2em 0 0;
-  display:inline-block;
+
+.project_list li, .tool_list li {
+  margin: .25em 0;
+  display: block;
+  position:relative;
+}
+
+.project_list li:before, .tool_list li:before {
+  font-size:1em;
+  content:'-';
+  position:absolute;
+  top:0;
+  left:-1em;
+}
+
+.project_list li span {
+  font-size:.75em;
+  margin:0 0 0 .25em;
 }

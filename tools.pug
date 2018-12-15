@@ -12,11 +12,9 @@ html
           h2 Tools
           p Click on a tool for more details
 
-        section.tool_list
+        ol.tool_list
           each tool,index in tools
-            div
+            li
               a(href="/tool/" + tool.slug) #{tool.title}
-            if (index < tools.length - 1 && ((index + 1) % 6) === 0)
-              br
 
     include templates/main/footer.pug

@@ -6,6 +6,31 @@ html
 
     //For all of the main content
     main
-      include templates/tool/single.pug
+      article.single_tool
+        header
+          h2=tool.title
+
+          if(tool.use)
+            p=tool.use
+          
+        section
+          header
+            h3 Used In
+          each project,index in tool.projects
+            a(href="/project/" + project.slug)=project.title
+            if(index < tool.projects.length - 1)
+              span=", " 
+
+        section
+          header
+            h3 References
+          if(tool.references)
+            each reference,index in tool.references
+              a(href=reference.url)=reference.title
+              if(index < tool.references.length - 1)
+                span=", "
+                
+        footer
+          a(href="/tools") View all tools
 
     include templates/main/footer.pug

@@ -4,6 +4,8 @@
     "slug": "lightshow",
     "github": "https://github.com/nanu2000/Light-Show-Engine",
     "snippet": "LightShow is a 3D framework created with the purpose of flexibility, scalability, and simplicity.",
+    "shortSnippet": "A 3D graphics framework",
+    "content":"test",
     "featured": true,
     "features": [
       "3D skeletal animation", 
@@ -34,6 +36,7 @@
     "title": "StarDive",
     "slug": "stardive",
     "snippet": "StarDive is a game created with Unity3D and is published on Google Play, Amazon, and the Apple App store. StarDive is my second published project.",
+    "shortSnippet": "An app made with Unity3D- my second game",
     "featured": true,
     "images":[
       {
@@ -63,6 +66,7 @@
     "title": "Aeroflight",
     "slug": "aeroflight",
     "snippet": "Aeroflight is a game created with Unity3D and is published on Google Play, Amazon, and the Apple App store. Aeroflight is my first published project.",
+    "shortSnippet": "An app made with Unity3D- my first game",
     "featured": true,
     "images":[
       {
@@ -77,7 +81,8 @@
   {
     "title": "Adventures of Lolo!",
     "slug": "adventuresofloloexcl",
-    "snippet": "Adventures of Lolo! was made in one month for the NES Box art game jam in 2015. It is my third game and my first participation in a game jam. The game is based off of the North American cover Art for the NES title, \"Adventures of Lolo\". ",
+    "snippet": "Adventures of Lolo! was made in one month for the NES Box art game jam in 2015. It is my third game and my first participation in a game jam. The game is based off of the North American cover Art for the NES title, \"Adventures of Lolo\". ", 
+    "shortSnippet": "A simple game built for windows- my third game",
     "featured": true,
     "images":[
       {
@@ -99,6 +104,7 @@
   {
     "title": "DrumChannel - 2018",
     "snippet": "DrumChannel is a website created for the drumming and music community. DrumChannel (in 2018) was built with the collaborated effort of me and the DC team.",
+    "shortSnippet": "A website built with the collaborated effort of me and the DC team",
     "slug": "drumchannel",
     "featured": true,
     "images":[
@@ -115,6 +121,7 @@
     "title": "The old devrichie.com",
     "slug": "olddevrichie",
     "snippet": "The old devrichie is what this website used to be. I felt like I wanted to explore some new technology after leaving DrumChannel, so I decided to re-create it.",
+    "shortSnippet": "My old website",
     "github": "https://github.com/nanu2000/Devrichie-Old",
     "featured": false
   },
@@ -122,12 +129,14 @@
     "title": "Customer Support form",
     "slug": "customersupportform",
     "snippet": "This project is a backend interface meant to be used for customer support.",
+    "shortSnippet": "A customer support form for employees",
     "featured": false
   },
   {
     "title": "devrichie.com",
     "slug": "devrichie",
     "snippet": "devrichie is a showcase of all my work - it contains all of the tools and projects I have used along with information and linkage for each one. Chances are, you're viewing it now.",
+    "shortSnippet": "A showcase of all my work",
     "github": "https://github.com/nanu2000/devrichie.com",
     "featured": false
   },
@@ -135,6 +144,7 @@
     "title": "richsikra.com",
     "slug": "richsikra",
     "snippet": "richsikra is a simple wordpress website.",
+    "shortSnippet": "a simple wordpress website",
     "featured": false,
     "images":[
       {
@@ -150,6 +160,7 @@
     "title": "atmega328 led light strip controller",
     "slug": "ledlightswitchcontroller",
     "snippet": "This project is a LED light strip controller, built to run with a mutlicolor LED light strip on the atmega328 microcontroller.",
+    "shortSnippet": "An LED light strip controller",
     "github": "https://github.com/nanu2000/Led-Light-Strip-Controller",
     "featured": false
   },
@@ -157,6 +168,7 @@
     "title": "Task list creator",
     "slug": "tasklistcreator",
     "snippet": "This project is a simple task list creator built in a couple days for an old job of mine.",
+    "shortSnippet": "A simple task list creator",
     "github": "https://github.com/nanu2000/Task-List-Creator",
     "featured": false
   }

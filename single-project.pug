@@ -6,6 +6,46 @@ html
 
     //For all of the main content
     main
-      include templates/project/single.pug
+      article.single_project
+        header
+          h2=project.title
+            
+          if(project.snippet)
+            p.snippet=project.snippet
+
+          if(project.github)
+            div
+              a(href=project.github) View on Github
+            
+        section.project_icons
+          //TODO: Move logic into processor
+          - var icon = false
+          if project.images
+            each image in project.images
+              if image.category === "icon"
+                - icon = image
+                - break
+
+          if icon != false
+            div.project_icon
+              img(src=("/project/" + project.slug + "/images/" + icon.slug) alt=icon.alt)
+
+        section.content
+          header
+            h3 About
+          if project.content
+            !=project.content
+
+        section
+          header
+            h3 Tools Used: 
+          each tool,index in project.tools
+            a(href="/tool/" + tool.slug)=tool.title
+            if(index < project.tools.length - 1)
+              span
+                =", "
+                
+        footer
+          a(href="/projects") View all projects
 
     include templates/main/footer.pug
