@@ -6,16 +6,16 @@ html
 
     //For all of the main content
     main
-      article.project_list
+      article
         header
           h2 Projects
-          h3 Click on a project for more details
+          p Click on a project for more details
 
-        each project,index in projects
-          a(href="/project/" + project.slug) #{project.title}
-          if (index < projects.length - 1 && ((index + 1) % 2) === 0)
-            br
-          else if(index < projects.length - 1)
-            span="-"
+        section.project_list
+          each project,index in projects
+            div
+              a(href="/project/" + project.slug) #{project.title}
+            if (index < projects.length - 1 && ((index + 1) % 3) === 0)
+              br
 
     include templates/main/footer.pug

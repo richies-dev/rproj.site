@@ -78,3 +78,10 @@ p {
 .footer .copyright{
   font-size:.75em;
 }
+
+.project_list, .tool_list {
+}
+.project_list div, .tool_list div {
+  margin: 1em 2em 0 0;
+  display:inline-block;
+}
