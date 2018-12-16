@@ -62,7 +62,7 @@ p {
   font-size:1.125em; /* 18px based on 16px default font-size */
 }
 
-@media all and (min-width:345px){
+@media all and (min-width:640px){
   
   .navbar .title {
     float:left;
