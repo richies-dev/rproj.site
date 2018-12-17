@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang="en")
   include templates/main/head.pug
 
   body
@@ -14,10 +14,9 @@ html
       //Skills/About
 
       article
-        section
-          header
-            h2 About
-          p devrichie is a site built as an access point for all of my projects, and which tools I have used to create them.
+        header
+          h2 About
+        p devrichie is a site built as an access point for all of my projects, and which tools I have used to create them.
 
         section
           header
@@ -32,7 +31,7 @@ html
             each project in projects
               if project.featured
                 li
-                  a(href="/tool/" + project.slug)=project.title
+                  a(href="/project/" + project.slug)=project.title
                   span=project.shortSnippet
 
           footer
@@ -47,13 +46,12 @@ html
 
 
       article
-        section
-          header
-            h2 Where can you find me?
-          p Short sentence here
-          p list places to find my work and communities I'm a part of - reddit, forums, youtube, twitter, etc...
-          a(href="https://github.com/nanu2000/") Github
-          a(href="https://codepen.io/nanu2000/") Codepen
+        header
+          h2 Where can you find me?
+        p Short sentence here
+        p list places to find my work and communities I'm a part of - reddit, forums, youtube, twitter, etc...
+        a(href="https://github.com/nanu2000/") Github
+        a(href="https://codepen.io/nanu2000/") Codepen
 
         section
           header
