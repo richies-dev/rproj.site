@@ -67,7 +67,7 @@
     "slug": "aeroflight",
     "snippet": "Aeroflight is a game created with Unity3D and is published on Google Play, Amazon, and the Apple App store. Aeroflight is my first published project.",
     "shortSnippet": "An app made with Unity3D- my first game",
-    "featured": true,
+    "featured": false,
     "images":[
       {
         "alt" : "aeroflight small banner image",

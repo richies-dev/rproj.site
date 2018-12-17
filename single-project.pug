@@ -30,10 +30,8 @@ html
             div.project_icon
               img(src=("/project/" + project.slug + "/images/" + icon.slug) alt=icon.alt)
 
-        section.content
-          header
-            h3 About
-          if project.content
+        if project.content
+          section.content
             !=project.content
 
         section

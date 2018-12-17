@@ -38,6 +38,9 @@ li:last-of-type {
 section, article {
   margin:2em 0;
 }
+footer {
+  margin:1em 0;
+}
 
 h1,h2,h3,h4,h5,p {
   margin: .2em 0;

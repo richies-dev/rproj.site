@@ -10,35 +10,56 @@ html
       //Quick summary
       header
         h1.index_title Developer Richie 
-        p devrichie is a site built as an access point for all of my projects, and which tools I have used to create them.
       
       //Skills/About
-      section.grid
-        article.grid_item-1-2
+
+      article
+        section
           header
-            h2 What is this?
+            h2 About
+          p devrichie is a site built as an access point for all of my projects, and which tools I have used to create them.
 
-          p 
-            ="lengthy description of site 1-2 paragraphs"
-
-          footer
-            a(href="https://github.com/nanu2000/") Github Icon
-            =" and "
-            a(href="https://codepen.io/nanu2000/") Codepen Icon
-            br
-            
-        article.grid_item-1-2
+        section
           header
-            h2 Highlighted Projects
+            h3 The current site
+            p lengthy description of site 1-2 paragraphs
 
-          p 
-            ="list highlights here"
+        section
+          header
+            h4 Project highlights
+          p A short sentence on what these are
+          ol.project_list
+            each project in projects
+              if project.featured
+                li
+                  a(href="/tool/" + project.slug)=project.title
+                  span=project.shortSnippet
 
           footer
             a(href="/projects/") View all projects
             =" - or the "
             a(href="/tools/") tools used to create them
-              
+
+        section
+          header
+            h3 Previous versions of this site
+            p description of previous versions - include images
+
+
+      article
+        section
+          header
+            h2 Where can you find me?
+          p Short sentence here
+          p list places to find my work and communities I'm a part of - reddit, forums, youtube, twitter, etc...
+          a(href="https://github.com/nanu2000/") Github
+          a(href="https://codepen.io/nanu2000/") Codepen
+
+        section
+          header
+            h3 Send me a message
+          p email/contact can go here
+            
       include templates/main/contact-form.pug
 
     include templates/main/footer.pug
