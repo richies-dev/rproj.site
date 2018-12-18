@@ -25,12 +25,24 @@ a:visited {
 ul,ol {
   list-style: none;
   padding:0;
-  margin:0;
+  margin:.5em 0;
 }
-li {
+li{
+  margin: .25em 0;
+}
+ol.dotted, ul.dotted {
+  list-style: disc;
+  margin-left: .25em;
+}
+ol.numbered {
+  list-style: decimal;
+  margin-left: .25em;
+}
+ol.inline li, ul.inline li {
   display:inline;
   margin:0 1em 0 0;
 }
+
 li:last-of-type {
   margin:0;
 }
@@ -105,25 +117,6 @@ p {
 }
 .footer .copyright{
   font-size:.75em;
-}
-
-
-.project_list, .tool_list {
-  margin:.5em;
-}
-
-.project_list li, .tool_list li {
-  margin: .25em 0;
-  display: block;
-  position:relative;
-}
-
-.project_list li:before, .tool_list li:before {
-  font-size:1em;
-  content:'-';
-  position:absolute;
-  top:0;
-  left:-1em;
 }
 
 .project_list li span {

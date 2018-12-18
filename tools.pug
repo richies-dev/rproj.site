@@ -7,12 +7,11 @@ html(lang="en")
     //For all of the main content
     main
       article
-
         header
           h2 Tools
           p Click on a tool for more details
 
-        ol.tool_list
+        ol.dotted.tool_list
           each tool,index in tools
             li
               a(href="/tool/" + tool.slug) #{tool.title}

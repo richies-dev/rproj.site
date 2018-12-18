@@ -11,7 +11,7 @@ html(lang="en")
           h2 Projects
           p Click on a project for more details
 
-        ol.project_list
+        ol.dotted.project_list
           each project,index in projects
             li
               a(href="/project/" + project.slug) #{project.title}
