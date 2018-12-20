@@ -7,32 +7,32 @@ html(lang="en")
 
     //For all of the main content
     main
-      //Quick summary
-      header
-        h1.index_title Developer Richie 
-
-      p.
-        Devrichie is a central reference point for my projects and the tools used to create them. 
-        The name devrichie is short for what I do (Developer), and who I am (Richie).
-        #[br]
-        #[a(href="/project/devrichie/") more about this site]
-
-      section
+      article
         header
-          h2 Project highlights
-        p Below are some of my most notable projects
-        ul.project_list
-          each project in projects
-            if project.featured
-              li
-                a(href="/project/" + project.slug)=project.title
-                span=project.shortSnippet
+          h1.index_title Developer Richie 
 
-        footer
-          a(href="/projects/") View all projects
-          =" - or the "
-          a(href="/tools/") tools used to create them
+        p.
+          Devrichie is a central reference point for my projects and the tools used to create them. 
+          The name devrichie is short for what I do (Developer), and who I am (Richie).
+          #[br]
+          #[a(href="/project/devrichie/") more about this site]
 
-      include templates/main/contact-form.pug
+        section
+          header
+            h2 Project highlights
+          p Below are some of my most notable projects
+          ul.project_list
+            each project in projects
+              if project.featured
+                li
+                  a(href="/project/" + project.slug)=project.title
+                  span=project.shortSnippet
+
+          footer
+            a(href="/projects/") View all projects
+            =" - or the "
+            a(href="/tools/") tools used to create them
+
+        include templates/main/contact-form.pug
 
     include templates/main/footer.pug

@@ -8,7 +8,7 @@ html(lang="en")
     main
       article.single_project
         header
-          h2=project.title
+          h1=project.title
             
           if(project.snippet)
             p.snippet=project.snippet
@@ -36,7 +36,7 @@ html(lang="en")
 
         section
           header
-            h3 Tools Used: 
+            h2 Tools Used: 
           each tool,index in project.tools
             a(href="/tool/" + tool.slug)=tool.title
             if(index < project.tools.length - 1)

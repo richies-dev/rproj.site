@@ -8,14 +8,14 @@ html(lang="en")
     main
       article.single_tool
         header
-          h2=tool.title
+          h1=tool.title
 
           if(tool.use)
             p=tool.use
           
         section
           header
-            h3 Used In
+            h2 Used In
           each project,index in tool.projects
             a(href="/project/" + project.slug)=project.title
             if(index < tool.projects.length - 1)
@@ -23,7 +23,7 @@ html(lang="en")
 
         section
           header
-            h3 References
+            h2 References
           if(tool.references)
             each reference,index in tool.references
               a(href=reference.url)=reference.title
