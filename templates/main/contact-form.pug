@@ -1,16 +1,24 @@
-//- //The contact form should send an email to me and prompt a captcha
-//- article
+article
+  header
+    h2 Where can you find me?
+  //p In my opinion, it's important to have an online presence. 
+  p Here is a list of the communities I'm a part of:
 
-//-   header
-//-     h3 Have a question?
-//-   form(action='#')
-//-     label Name
-//-     input(placeholder='Your name' type='text' autocomplete='name')
+  ul.dotted
+    li
+      a(href="https://github.com/nanu2000/") GitHub
+    li
+      a(href="https://codepen.io/nanu2000/") CodePen
+    li
+      a(href="https://www.youtube.com/channel/UCLhTqg04xF9MtMbZfFTRsYw") YouTube
+    li
+      a(href="https://reddit.com/user/_nanu_") Reddit 
+      ="(mostly r/gamedev)"
 
-//-     label Email Address
-//-     input(placeholder='Your email' type='email' autocomplete='email')
-
-//-     label Message
-//-     textarea(placeholder='How can I help you?')
-
-//-     input(value='Send message' type='submit')
+  section
+    header
+      h3 Send me a message
+    p.
+      Questions and comments are always welcome. You can reach me via email 
+      (#[a(href="mailto:richiesikra@gmail.com") richiesikra@gmail.com]) 
+      or through any of the sources listed above.

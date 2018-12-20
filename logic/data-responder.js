@@ -32,6 +32,7 @@ class DataResponder {
     this._writeTools();
     this._writeToolListUrl();
     this._writeProjectListUrl();
+    this._writeContactUrl();
     this._writeAssetUrls();
   }
 
@@ -135,6 +136,15 @@ class DataResponder {
       this.res.statusCode = 200;
       this.res.setHeader("Content-Type", "text/html");
       this._endResp(pug.renderFile(baseDirectoryPath + "/tools.pug", this.processedData));
+    }
+  }
+
+  // Create page to display all the tools
+  _writeContactUrl() {
+    if (this._isUrl("contact")) {
+      this.res.statusCode = 200;
+      this.res.setHeader("Content-Type", "text/html");
+      this._endResp(pug.renderFile(baseDirectoryPath + "/contact.pug", this.processedData));
     }
   }
 

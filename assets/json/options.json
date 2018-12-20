@@ -1,16 +1,16 @@
 {
   "navbar":[
     {
-      "title":"Home",
-      "url": "/"
-    },
-    {
       "title":"Projects",
       "url": "/projects"
     },
     {
       "title":"Tools",
       "url": "/tools"
+    },
+    {
+      "title":"Contact",
+      "url": "/contact"
     }
   ]
 }
