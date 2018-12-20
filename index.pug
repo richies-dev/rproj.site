@@ -33,6 +33,29 @@ html(lang="en")
             =" - or the "
             a(href="/tools/") tools used to create them
 
-        include templates/main/contact-form.pug
+        section
+          header
+            h2 Where to find me
+          //p In my opinion, it's important to have an online presence. 
+          p Here is a list of the communities I'm a part of:
+
+          ul.dotted
+            li
+              a(href="https://github.com/nanu2000/") GitHub
+            li
+              a(href="https://codepen.io/nanu2000/") CodePen
+            li
+              a(href="https://www.youtube.com/channel/UCLhTqg04xF9MtMbZfFTRsYw") YouTube
+            li
+              a(href="https://reddit.com/user/_nanu_") Reddit 
+              ="(mostly r/gamedev)"
+
+          section
+            header
+              h3 Send me a message
+            p.
+              Questions and comments are always welcome. You can reach me via email 
+              (#[a(href="mailto:richiesikra@gmail.com") richiesikra@gmail.com]) 
+              or through any of the sources listed above.
 
     include templates/main/footer.pug
