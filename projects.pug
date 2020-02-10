@@ -1,20 +1,17 @@
-doctype html
-html(lang="en")
-  include templates/main/head.pug
-  body
-    include templates/main/navbar.pug
+extends templates/main/site.pug
 
-    //For all of the main content
-    main
-      section
-        header
-          h1 Projects
-          p Click on a project for more details
+block head
+  meta(name="author" content="Richie Sikra")
+  meta(name="description" content="Projects")
 
-        ol.dotted.project_list
-          each project,index in projects
-            li
-              a(href="/project/" + project.slug) #{project.title}
-              span=" " + project.shortSnippet
+block main
+  section
+    header
+      h1 Projects
+      p Click on a project for more details
 
-    include templates/main/footer.pug
+    ol.dotted.project_list
+      each project,index in projects
+        li
+          a(href="/project/" + project.slug) #{project.title}
+          span=" " + project.shortSnippet

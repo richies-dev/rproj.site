@@ -1,34 +1,31 @@
-doctype html
-html(lang="en")
-  include templates/main/head.pug
-  body
-    include templates/main/navbar.pug
+extends templates/main/site.pug
 
-    //For all of the main content
-    main
-      article
-        header
-          h1 Where to find me
-        //p In my opinion, it's important to have an online presence. 
-        p Here is a list of the communities I'm a part of:
+block head
+  meta(name="author" content="Richie Sikra")
+  meta(name="description" content="Contact me")
 
-        ul.dotted
-          li
-            a(href="https://github.com/nanu2000/") GitHub
-          li
-            a(href="https://codepen.io/nanu2000/") CodePen
-          li
-            a(href="https://www.youtube.com/channel/UCLhTqg04xF9MtMbZfFTRsYw") YouTube
-          li
-            a(href="https://reddit.com/user/_nanu_") Reddit 
-            ="(mostly r/gamedev)"
+block main
+  article
+    header
+      h1 Where to find me
+    //p In my opinion, it's important to have an online presence. 
+    p Here is a list of the communities I'm a part of:
 
-        section
-          header
-            h2 Send me a message
-          p.
-            Questions and comments are always welcome. You can reach me via email 
-            (#[a(href="mailto:richiesikra@gmail.com") richiesikra@gmail.com]) 
-            or through any of the sources listed above.
-            
-    include templates/main/footer.pug
+    ul.dotted
+      li
+        a(href="https://github.com/nanu2000/") GitHub
+      li
+        a(href="https://codepen.io/nanu2000/") CodePen
+      li
+        a(href="https://www.youtube.com/channel/UCLhTqg04xF9MtMbZfFTRsYw") YouTube
+      li
+        a(href="https://reddit.com/user/_nanu_") Reddit 
+        ="(mostly r/gamedev)"
+
+    section
+      header
+        h2 Send me a message
+      p.
+        Questions and comments are always welcome. You can reach me via email 
+        (#[a(href="mailto:richiesikra@gmail.com") richiesikra@gmail.com]) 
+        or through any of the sources listed above.

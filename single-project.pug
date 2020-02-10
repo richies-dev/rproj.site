@@ -1,49 +1,46 @@
-doctype html
-html(lang="en")
-  include templates/main/head.pug
-  body
-    include templates/main/navbar.pug
+extends templates/main/site.pug
 
-    //For all of the main content
-    main
-      article.single_project
-        header
-          h1=project.title
+block head
+  meta(name="author" content="Richie Sikra")
+  meta(name="description" content=project.snippet)
+
+block main
+  article.single_project
+    header
+      h1=project.title
+        
+      if(project.snippet)
+        p.snippet=project.snippet
+
+      if(project.github)
+        div
+          a(href=project.github) View on Github
+        
+    section.project_icons
+      //TODO: Move logic into processor
+      - var icon = false
+      if project.images
+        each image in project.images
+          if image.category === "icon"
+            - icon = image
+            - break
+
+      if icon != false
+        div.project_icon
+          img(src=("/project/" + project.slug + "/images/" + icon.slug) alt=icon.alt)
+
+    if project.content
+      section.content
+        !=project.content
+
+    section
+      header
+        h2 Tools Used: 
+      each tool,index in project.tools
+        a(href="/tool/" + tool.slug)=tool.title
+        if(index < project.tools.length - 1)
+          span
+            =", "
             
-          if(project.snippet)
-            p.snippet=project.snippet
-
-          if(project.github)
-            div
-              a(href=project.github) View on Github
-            
-        section.project_icons
-          //TODO: Move logic into processor
-          - var icon = false
-          if project.images
-            each image in project.images
-              if image.category === "icon"
-                - icon = image
-                - break
-
-          if icon != false
-            div.project_icon
-              img(src=("/project/" + project.slug + "/images/" + icon.slug) alt=icon.alt)
-
-        if project.content
-          section.content
-            !=project.content
-
-        section
-          header
-            h2 Tools Used: 
-          each tool,index in project.tools
-            a(href="/tool/" + tool.slug)=tool.title
-            if(index < project.tools.length - 1)
-              span
-                =", "
-                
-        footer
-          a(href="/projects") View all projects
-
-    include templates/main/footer.pug
+    footer
+      a(href="/projects") View all projects

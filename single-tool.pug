@@ -1,36 +1,32 @@
-doctype html
-html(lang="en")
-  include templates/main/head.pug
-  body
-    include templates/main/navbar.pug
+extends templates/main/site.pug
 
-    //For all of the main content
-    main
-      article.single_tool
-        header
-          h1=tool.title
+block head
+  meta(name="author" content="Richie Sikra")
 
-          if(tool.use)
-            p=tool.use
-          
-        section
-          header
-            h2 Used In
-          each project,index in tool.projects
-            a(href="/project/" + project.slug)=project.title
-            if(index < tool.projects.length - 1)
-              span=", " 
+block main
+  article.single_tool
+    header
+      h1=tool.title
 
-        section
-          header
-            h2 References
-          if(tool.references)
-            each reference,index in tool.references
-              a(href=reference.url)=reference.title
-              if(index < tool.references.length - 1)
-                span=", "
-                
-        footer
-          a(href="/tools") View all tools
+      if(tool.use)
+        p=tool.use
+      
+    section
+      header
+        h2 Used In
+      each project,index in tool.projects
+        a(href="/project/" + project.slug)=project.title
+        if(index < tool.projects.length - 1)
+          span=", " 
 
-    include templates/main/footer.pug
+    section
+      header
+        h2 References
+      if(tool.references)
+        each reference,index in tool.references
+          a(href=reference.url)=reference.title
+          if(index < tool.references.length - 1)
+            span=", "
+            
+    footer
+      a(href="/tools") View all tools

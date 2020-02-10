@@ -1,19 +1,16 @@
-doctype html
-html(lang="en")
-  include templates/main/head.pug
-  body
-    include templates/main/navbar.pug
+extends templates/main/site.pug
 
-    //For all of the main content
-    main
-      section
-        header
-          h1 Tools
-          p Click on a tool for more details
+block head
+  meta(name="author" content="Richie Sikra")
+  meta(name="description" content="Tools")
 
-        ol.dotted.tool_list
-          each tool,index in tools
-            li
-              a(href="/tool/" + tool.slug) #{tool.title}
+block main
+  section
+    header
+      h1 Tools
+      p Click on a tool for more details
 
-    include templates/main/footer.pug
+    ol.dotted.tool_list
+      each tool,index in tools
+        li
+          a(href="/tool/" + tool.slug) #{tool.title}
