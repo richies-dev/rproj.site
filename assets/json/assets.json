@@ -10,11 +10,5 @@
     "mime":"application/javascript",
     "path":"/script.js",
     "slug":"script"
-  },
-  {
-    "alt" :"The background being used on rproj.site",
-    "mime":"image/svg+xml",
-    "path":"/assets/images/bg.svg",
-    "slug":"bg"
   }
 ]
