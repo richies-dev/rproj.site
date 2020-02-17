@@ -1,0 +1,12 @@
+section.project_images
+  header
+    h2="Images of the interface"
+
+  //TODO: Move logic into processor
+  if project.images
+    each image in project.images
+      if image.category === "image"
+          div.project_icon
+            div.icon_title
+              p=image.title
+            img(src=("/project/" + project.slug + "/images/" + image.slug) alt=image.alt)

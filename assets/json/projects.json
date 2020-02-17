@@ -144,7 +144,7 @@
     "title": "RichSikra.com",
     "slug": "richsikra",
     "snippet": "richsikra is a simple wordpress website.",
-    "shortSnippet": "a simple wordpress website",
+    "shortSnippet": "A simple wordpress website",
     "featured": false,
     "images":[
       {
@@ -157,10 +157,54 @@
     ]
   },
   {
+    "title": "Gentle Grooming Admin Interface",
+    "slug": "jollydog",
+    "snippet": "The appointment scheduling and customer management interface built for Gentle Grooming.",
+    "shortSnippet": "An admin interface.",
+    "featured": false,
+    "images":[
+      {
+        "title":"The add a new customer form. Here you can optionally add any pets the customer owns.",
+        "alt" :"jollydog add-customer modal",
+        "slug": "jd-add-customer",
+        "path": "add-customer.png",
+        "mime": "image/png",
+        "category": "image"
+      },
+      
+      {
+        "title":"The Calendar.",
+        "alt" :"jollydog calender view",
+        "slug": "jd-calendar",
+        "path": "calendar.png",
+        "mime": "image/png",
+        "category": "image"
+      },
+      
+      {
+        "title":"The customer list- searchable by name or phone number.",
+        "alt" :"jollydog customer list",
+        "slug": "jd-customer-list",
+        "path": "customer-list.png",
+        "mime": "image/png",
+        "category": "image"
+      },
+      
+      {
+        "title":"The appointment scheduling form.",
+        "alt" :"jollydog new appointment modal",
+        "slug": "jd-new-appointment",
+        "path": "new-appointment.png",
+        "mime": "image/png",
+        "category": "image"
+      }
+    ]
+  },
+  {
     "title": "Atmega328 LED Light Strip Controller",
     "slug": "ledlightswitchcontroller",
     "snippet": "This project is a LED light strip controller, built to run with a mutlicolor LED light strip on the atmega328 microcontroller.",
-    "shortSnippet": "An LED light strip controller",
+    "shortSnippet": "A LED light strip controller",
     "github": "https://github.com/nanu2000/Led-Light-Strip-Controller",
     "featured": false
   },

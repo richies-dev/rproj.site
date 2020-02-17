@@ -38,7 +38,7 @@
         "title":"php.net"
       }],
     "slug": "php",
-    "projects" : ["olddevrichie", "drumchannel", "customersupportform"]
+    "projects" : ["olddevrichie", "drumchannel", "customersupportform", "jollydog"]
   },
   {
     "featured": false,
@@ -52,7 +52,7 @@
       }
     ],
     "slug": "javascript",
-    "projects" : ["devrichie", "olddevrichie", "drumchannel", "tasklistcreator", "customersupportform"]
+    "projects" : ["devrichie", "olddevrichie", "drumchannel", "tasklistcreator", "customersupportform", "jollydog"]
   },
   {
     "featured": false,
@@ -109,7 +109,7 @@
       } 
     ],
     "slug": "html",
-    "projects" : ["olddevrichie", "drumchannel"]
+    "projects" : ["olddevrichie", "drumchannel", "jollydog"]
   },
   {
     "featured": true,
@@ -179,7 +179,7 @@
         "title":"wordpress.org"
       }],
     "slug": "wordpress",
-    "projects" : ["drumchannel", "richsikra"]
+    "projects" : ["drumchannel", "richsikra", "jollydog"]
   },
   {
     "featured": false,
@@ -296,6 +296,6 @@
         "title":"sass-lang.com"
       }],
     "slug": "scss",
-    "projects" : ["devrichie", "drumchannel"]
+    "projects" : ["devrichie", "drumchannel", "jollydog"]
   }
 ]

@@ -88,6 +88,7 @@ class DataProcessor {
       if (project.images) {
         project.images.forEach(image => {
           self.assetsJson.push({
+            "title" : image.title,
             "alt" : image.alt,
             "mime": image.mime,
             "path": "/assets/projects/" + project.slug  + "/images/" + image.path,
@@ -107,7 +108,7 @@ class DataProcessor {
       var contentPath = baseDirectoryPath + "/assets/projects/" + project.slug  + "/content.pug";
       if(fs.existsSync(contentPath)){
         
-        var contentRendered = pug.renderFile(contentPath);
+        var contentRendered = pug.renderFile(contentPath, {"project": project});
         project.content = contentRendered;
 
       }
