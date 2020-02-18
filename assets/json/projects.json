@@ -1,10 +1,10 @@
 [
   {
-    "title": "LightShow Framework",
+    "title": "LightShow Boilerplate",
     "slug": "lightshow",
     "github": "https://github.com/nanu2000/Light-Show-Engine",
-    "snippet": "LightShow is a 3D framework created with the purpose of flexibility, scalability, and simplicity.",
-    "shortSnippet": "A 3D graphics framework",
+    "snippet": "LightShow is a 3D graphics/game boilerplate created with the purpose of flexibility, scalability, and simplicity.",
+    "shortSnippet": "A 3D OpenGL boilerplate",
     "content":"test",
     "featured": true,
     "features": [
