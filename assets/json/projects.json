@@ -126,13 +126,6 @@
     "featured": false
   },
   {
-    "title": "Customer Support form",
-    "slug": "customersupportform",
-    "snippet": "This project is a backend interface meant to be used for customer support.",
-    "shortSnippet": "A customer support form for employees",
-    "featured": false
-  },
-  {
     "title": "RProj.site",
     "slug": "devrichie",
     "snippet": "rproj.site is a showcase of all my work - it contains all of the tools and projects I have used along with information and linkage for each one. Chances are, you're viewing it now.",
