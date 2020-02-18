@@ -145,16 +145,7 @@
     "slug": "richsikra",
     "snippet": "richsikra is a simple wordpress website.",
     "shortSnippet": "A simple wordpress website",
-    "featured": false,
-    "images":[
-      {
-        "alt" :"richsikra.com banner image",
-        "slug": "banner-300x200",
-        "path": "banner-300x200.png",
-        "mime": "image/png",
-        "category": "icon"
-      }
-    ]
+    "featured": false
   },
   {
     "title": "Gentle Grooming Admin Interface",
@@ -164,7 +155,7 @@
     "featured": false,
     "images":[
       {
-        "title":"The add a new customer form. Here you can optionally add any pets the customer owns.",
+        "title":"The form used to add a new customer and their pets to the database.",
         "alt" :"jollydog add-customer modal",
         "slug": "jd-add-customer",
         "path": "add-customer.png",

@@ -130,7 +130,10 @@ p {
 .project_images .project_icon img {
   max-width:100%;
 }
-
 .project_images .project_icon {
-  margin-bottom: 24px;
+  margin: 16px 0px;
+}
+.project_images .project_icon .icon_title {
+  color: #555;
+  font-style: italic;
 }
