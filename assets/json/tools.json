@@ -38,7 +38,7 @@
         "title":"php.net"
       }],
     "slug": "php",
-    "projects" : ["olddevrichie", "drumchannel", "customersupportform", "jollydog"]
+    "projects" : ["olddevrichie", "drumchannel", "jollydog"]
   },
   {
     "featured": false,
@@ -52,7 +52,7 @@
       }
     ],
     "slug": "javascript",
-    "projects" : ["devrichie", "olddevrichie", "drumchannel", "tasklistcreator", "customersupportform", "jollydog"]
+    "projects" : ["devrichie", "olddevrichie", "drumchannel", "tasklistcreator", "jollydog"]
   },
   {
     "featured": false,
@@ -283,7 +283,7 @@
         "title":"git-scm.com"
       }],
     "slug": "git",
-    "projects" : ["ledlightswitchcontroller", "lightshow", "drumchannel", "tasklistcreator", "customersupportform", "olddevrichie", "devrichie"]
+    "projects" : ["ledlightswitchcontroller", "lightshow", "drumchannel", "tasklistcreator", "olddevrichie", "devrichie"]
   },
   {
     "featured": false,
