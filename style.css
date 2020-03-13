@@ -1,10 +1,10 @@
 html {
-    background-color:#F9F9FA;
+    background-color: #222;
   }
   
   body {
     font-family: 'Roboto', sans-serif;
-    color:#333;
+    color:#ddd;
     font-size:16px;
     margin:1.5em auto;
     max-width:800px;
@@ -14,13 +14,13 @@ html {
   
   a {
     text-decoration: underline;
-    color: #336bcc;
+    color: #6a98af;
   }
   a:hover {
-    color:#005cff;
+    color:#6FC1C7;
   }
   a:visited {
-    color: #5A21A3;
+    color: #6A75BD;
   }
   ul,ol {
     list-style: none;
@@ -108,12 +108,9 @@ html {
     margin:0;
   }
   .navbar a {
-    color: #336bcc;
+    color: #6a98af;
     vertical-align: text-top;
     text-decoration:none;
-  }
-  .navbar .title a {
-    color:#002E7F;
   }
   
   .footer{
@@ -132,9 +129,9 @@ html {
     max-width:100%;
   }
   .project_images .project_icon {
-    margin: 16px 0px;
+    margin: 0px 0px 16px 0px;
   }
   .project_images .project_icon .icon_title {
-    color: #555;
+    color: #aaa;
     font-style: italic;
   }
