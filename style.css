@@ -1,8 +1,7 @@
 html {
     background-color: #222;
-  }
-  
-  body {
+}
+body {
     font-family: 'Roboto', sans-serif;
     color:#ddd;
     font-size:16px;
@@ -10,128 +9,144 @@ html {
     max-width:800px;
     padding:1em;
     line-height:1.7;
-  }
-  
-  a {
+}
+a {
     text-decoration: underline;
     color: #6a98af;
-  }
-  a:hover {
+}
+a:hover {
     color:#6FC1C7;
-  }
-  a:visited {
+}
+a:visited {
     color: #6A75BD;
-  }
-  ul,ol {
+}
+ul,ol {
     list-style: none;
     padding:0;
     margin:.5em 0;
-  }
-  li{
+}
+li{
     margin: .25em 0;
-  }
-  ol.dotted, ul.dotted {
+}
+ol.dotted, ul.dotted {
     list-style: disc;
     margin-left: .25em;
-  }
-  ol.numbered {
+}
+ol.numbered {
     list-style: decimal;
     margin-left: .25em;
-  }
-  ol.inline li, ul.inline li {
+}
+ol.inline li, ul.inline li {
     display:inline;
     margin:0 1em 0 0;
-  }
-  
-  li:last-of-type {
+}
+li:last-of-type {
     margin:0;
-  }
-  
-  section, article {
+}
+section, article {
     margin:2em 0;
-  }
-  footer {
+}
+footer {
     margin:1em 0;
-  }
-  
-  h1,h2,h3,h4,h5,p {
+}
+h1,h2,h3,h4,h5,p {
     margin: .2em 0;
-  }
-  
-  h1 {
+}
+h1 {
     font-size:1.75em; /* 28px based on 16px default font-size */
-  }
-  h2 {
+}
+h2 {
     font-size:1.5em;  /* 24px based on 16px default font-size */
-  }
-  h3 {
+}
+h3 {
     font-size:1.25em; /* 20px based on 16px default font-size */
-  }
-  h4 {
+}
+h4 {
     font-size:1em; 
-  }
-  h5 {
+}
+h5 {
     font-size:.75em;
-  }
-  p {
+}
+p {
     font-size:1em;
-  }
-  
-  @media all and (min-width:640px){
-    
+}
+
+@media all and (min-width:640px){
+
     .navbar .title {
-      float:left;
+        float:left;
     }
     .navbar nav {
-      float:right;
+        float:right;
     }
-  }
-  
-  .navbar{
+}
+
+.navbar{
     margin: 0 0 1.5em 0;
-  }
-  .navbar .title, .navbar nav {
+}
+.navbar .title, .navbar nav {
     margin:0;
-  }
-  .navbar .title {
+}
+.navbar .title {
     line-height:32px;
-  }
-  .navbar nav {
+}
+.navbar nav {
     line-height:32px;
-  }
-  .navbar:after {
+}
+.navbar:after {
     content: "";
     display: table;
     clear: both;
-  }
-  .navbar ul {
+}
+.navbar ul {
     margin:0;
-  }
-  .navbar a {
+}
+.navbar a {
     color: #6a98af;
     vertical-align: text-top;
     text-decoration:none;
-  }
-  
-  .footer{
+}
+.footer{
     margin: 4em 0;
-  }
-  .footer .copyright{
+}
+.footer .copyright{
     font-size:.75em;
-  }
-  
-  .project_list li span {
+}
+.project_list li a{
+    min-width: 170px;
+    display: inline-block;
+}
+.project_list li span {
     font-size:.75em;
     margin:0 0 0 .25em;
-  }
-  
-  .project_images .project_icon img {
+}
+.project-page .project_list li a{
+    min-width: 0px;
+}
+@media all and (min-width:640px){
+
+    .project_list{
+        display:table;
+    }
+    .project_list li{
+        display:table-row;
+    }
+    .project_list li a{
+        display:table-cell;
+    }
+    .project-page .project_list li a{
+        min-width: 0px;
+        padding-right:1em;
+    }
+}
+
+.project_images .project_icon img {
     max-width:100%;
-  }
-  .project_images .project_icon {
-    margin: 0px 0px 16px 0px;
-  }
-  .project_images .project_icon .icon_title {
+}
+.project_images .project_icon {
+    margin-bottom: 1em;
+}
+.project_images .project_icon .icon_title {
     color: #aaa;
     font-style: italic;
-  }
+}
