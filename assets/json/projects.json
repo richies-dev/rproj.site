@@ -4,7 +4,7 @@
     "slug": "lightshow",
     "github": "https://github.com/nanu2000/Light-Show-Engine",
     "snippet": "LightShow is a 3D graphics/game boilerplate created with the purpose of flexibility, scalability, and simplicity.",
-    "shortSnippet": "A 3D OpenGL boilerplate",
+    "shortSnippet": "3D OpenGL template",
     "content":"test",
     "featured": true,
     "features": [
@@ -36,7 +36,7 @@
     "title": "StarDive",
     "slug": "stardive",
     "snippet": "StarDive is a game created with Unity3D and is published on Google Play, Amazon, and the Apple App store. StarDive is my second published project.",
-    "shortSnippet": "An app made with Unity3D",
+    "shortSnippet": "Unity3D app",
     "featured": true,
     "images":[
       {
@@ -82,7 +82,7 @@
     "title": "Adventures of Lolo!",
     "slug": "adventuresofloloexcl",
     "snippet": "Adventures of Lolo! was made in one month for the NES Box art game jam in 2015. It is my third game and my first participation in a game jam. The game is based off of the North American cover Art for the NES title, \"Adventures of Lolo\". ", 
-    "shortSnippet": "A simple game built for windows",
+    "shortSnippet": "Windows game",
     "featured": true,
     "images":[
       {
@@ -104,7 +104,7 @@
   {
     "title": "DrumChannel - 2018",
     "snippet": "DrumChannel is a website created for the drumming and music community. DrumChannel (in 2018) was built with the collaborated effort of me and the DC team.",
-    "shortSnippet": "Built with me & the DC team",
+    "shortSnippet": "E-learning website",
     "slug": "drumchannel",
     "featured": true,
     "images":[
