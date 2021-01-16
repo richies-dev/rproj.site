@@ -42,6 +42,15 @@ class DataResponder {
     // /ProjectPages/LoloGamePage.php     -> 301 perm /project/adventuresofloloexcl
     // /ProjectPages/StarDivePage.php -> 301 perm /project/stardive
     
+    if(this._isUrl("jollydog")){
+
+        this.res.statusCode = 301;
+        this.res.setHeader("Content-Type",  "text/html");
+        this.res.setHeader("Location",      "/project/jollydog");
+  
+        this.res.end();
+    }
+
     if(this._isUrl("ProjectPages/LoloGamePage.php")){
 
       this.res.statusCode = 301;
