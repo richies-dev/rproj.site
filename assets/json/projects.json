@@ -122,7 +122,6 @@
     "slug": "olddevrichie",
     "snippet": "The old devrichie is what this website used to be. I felt like I wanted to explore some new technology after leaving DrumChannel, so I decided to re-create it.",
     "shortSnippet": "My old website",
-    "github": "https://github.com/nanu2000/Devrichie-Old",
     "featured": false
   },
   {
@@ -183,21 +182,5 @@
         "category": "image"
       }
     ]
-  },
-  {
-    "title": "Atmega328 LED Light Strip Controller",
-    "slug": "ledlightswitchcontroller",
-    "snippet": "This project is a LED light strip controller, built to run with a mutlicolor LED light strip on the atmega328 microcontroller.",
-    "shortSnippet": "A LED light strip controller",
-    "github": "https://github.com/nanu2000/Led-Light-Strip-Controller",
-    "featured": false
-  },
-  {
-    "title": "Task list Creator",
-    "slug": "tasklistcreator",
-    "snippet": "This project is a simple task list creator built in a couple days for an old job of mine.",
-    "shortSnippet": "A simple task list creator",
-    "github": "https://github.com/nanu2000/Task-List-Creator",
-    "featured": false
   }
 ]
